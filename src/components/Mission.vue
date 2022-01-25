@@ -65,7 +65,9 @@
                             Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eros
                             erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.
                         </p>
+
                         <p class="text-base leading-7">
+                            Under the watchful eye of Ava Nakamoto, this community has grown into the leading Social DeFi trading center in the entire Metaverse.
                             Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas.
                             Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
                         </p>
