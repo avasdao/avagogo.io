@@ -3,96 +3,7 @@
         <main>
             <!-- Hero section -->
             <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-24">
-                <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
-                    <div>
-                        <div>
-                            <img class="h-24 w-auto" :src="require('../assets/disco.png')" alt="Workflow" />
-                        </div>
-
-                        <div class="mt-8">
-                            <div>
-                                <a href="#" class="inline-flex space-x-4">
-                                    <span class="rounded bg-rose-50 px-2.5 py-1 text-xs font-semibold text-rose-500 tracking-wide uppercase">
-                                        What's new
-                                    </span>
-                                    <span class="inline-flex items-center text-sm font-medium text-rose-500 space-x-1">
-                                        <span>Moralis + Avalanche Hackathon</span>
-                                        <!-- Heroicon name: solid/chevron-right -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="mt-6 sm:max-w-xl">
-                                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
-                                    <span class="text-blue-500 text-5xl">DeFi Is HARD!</span>
-                                    <span class="block text-gray-700">Copy Strategies From TOP Traders</span>
-                                </h1>
-                                <p class="mt-6 text-xl text-gray-500">
-                                    <strong class="text-green-500">Determine your risk level, follow expert strategies, and watch your portfolio grow.</strong>
-                                    Anim aute id magna aliqua ad ad non deserunt sunt.
-                                    Qui irure qui lorem cupidatat commodo.
-                                </p>
-                            </div>
-                            <form action="#" class="mt-12 sm:max-w-lg sm:w-full sm:flex">
-                                <div class="min-w-0 flex-1">
-                                    <label for="hero-email" class="sr-only">Email address</label>
-                                    <input
-                                        id="hero-email"
-                                        type="email"
-                                        class="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-rose-500 focus:ring-rose-500"
-                                        placeholder="Enter your email"
-                                    />
-                                </div>
-                                <div class="mt-4 sm:mt-0 sm:ml-3">
-                                    <router-link to="/dashboard"
-                                        class="block w-full rounded-md border border-transparent px-5 py-3 bg-rose-500 text-base font-medium text-white shadow hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 sm:px-10"
-                                    >
-                                        Open the App
-                                    </router-link>
-                                </div>
-                            </form>
-                            <div class="mt-6">
-                                <div class="inline-flex items-center divide-x divide-gray-300">
-                                    <div class="flex-shrink-0 flex pr-5">
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-                                    </div>
-                                    <div class="min-w-0 flex-1 pl-5 py-1 text-sm text-gray-500 sm:py-3"><span class="font-medium text-gray-900">Rated 5 stars</span> by over <span class="font-medium text-rose-500">500 beta users</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Intro />
 
                 <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
                     <div class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
@@ -127,6 +38,7 @@
 
 <script>
 /* Import components. */
+import Intro from '@/components/Intro'
 import Footer from '@/components/Footer'
 import Mission from '@/components/Mission'
 import Sponsors from '@/components/Sponsors'
@@ -134,6 +46,7 @@ import Launch from '@/components/Launch'
 
 export default {
     components: {
+        Intro,
         Footer,
         Mission,
         Sponsors,
