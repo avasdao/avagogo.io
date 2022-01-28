@@ -124,7 +124,7 @@ export default {
     methods: {
         async sendRequest() {
             if (!this.email) {
-                alert('Please provide your email address.')
+                return alert('Please provide your email address.')
             }
 
             const url = 'https://api.telr.io/v1/slack/invite'
@@ -145,6 +145,8 @@ export default {
 
             console.log('RESPONSE', response)
             if (response) {
+                this.email = ''
+                
                 this.toggleJoin = !this.toggleJoin
 
                 alert(`Your request was sent successfully!`)

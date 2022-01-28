@@ -25,6 +25,7 @@
                                 </a>
                                 <div class="-mr-2 flex items-center md:hidden">
                                     <button
+                                        @click="showMobileMenu = !showMobileMenu"
                                         type="button"
                                         class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                                         aria-expanded="false"
@@ -74,14 +75,15 @@
                   From: "opacity-100 scale-100"
                   To: "opacity-0 scale-95"
               -->
-                    <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                    <div v-if="showMobileMenu" class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
                         <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                             <div class="px-5 pt-4 flex items-center justify-between">
                                 <div>
-                                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="" />
+                                    <img class="h-10 w-auto" :src="require('../assets/logo.png')" alt="" />
                                 </div>
                                 <div class="-mr-2">
                                     <button
+                                        @click="showMobileMenu = !showMobileMenu"
                                         type="button"
                                         class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                                     >
@@ -149,12 +151,12 @@
                                     <label for="email" class="sr-only">Email</label>
                                     <input
                                         type="email"
-                                        name="email"
-                                        id="email"
+                                        v-model="email"
                                         class="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300"
                                         placeholder="Please enter your email here"
                                     />
                                     <button
+                                        @click="sendRequest"
                                         type="submit"
                                         class="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                                     >
@@ -480,22 +482,50 @@
 
 <script>
 export default {
-    components: {
-        //
+    props: {
+        msg: String
     },
-    data: () => {
+    data: function () {
         return {
-            //
+            email: null,
+            toggleJoin: null,
+            showMobileMenu: null,
         }
     },
     methods: {
-        //
+        async sendRequest() {
+            if (!this.email) {
+                return alert('Please provide your email address.')
+            }
+
+            const url = 'https://api.telr.io/v1/slack/invite'
+
+            const data = {
+                action: 'Requesting invitation to #telr slack channel.',
+                fullName: 'Ava GoGo Hackathon',
+                contact: this.email,
+            }
+
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+
+            console.log('RESPONSE', response)
+            if (response) {
+                this.email = ''
+
+                alert(`Your request was sent successfully!`)
+            }
+
+        },
+
     },
     created: function () {
-        //
-    },
-    mounted: function () {
-        //
+        this.showMobileMenu = false
     },
 }
 </script>

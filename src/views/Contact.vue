@@ -6,7 +6,7 @@
                     <div class="flex items-center justify-between w-full lg:w-auto">
                         <a href="#">
                             <span class="sr-only">Workflow</span>
-                            <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=purple&shade=600" alt="" />
+                            <img class="h-10 w-auto sm:h-16" :src="require('../assets/logo.png')" alt="" />
                         </a>
                         <div class="-mr-2 flex items-center lg:hidden">
                             <button
@@ -49,7 +49,7 @@
             From: "opacity-100 scale-100"
             To: "opacity-0 scale-95"
         -->
-            <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top lg:hidden">
+            <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top lg:hidden hidden">
                 <div class="rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="px-5 pt-4 flex items-center justify-between">
                         <div>
@@ -429,7 +429,7 @@
                 </div>
                 <div class="mt-12 border-t border-gray-700 pt-8">
                     <p class="text-base text-gray-400 xl:text-center">
-                        &copy; 2020 Workflow, Inc. All rights reserved.
+                        &copy; 2022 Ava GoGo MDAO. All rights reserved.
                     </p>
                 </div>
             </div>
