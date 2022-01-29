@@ -25,7 +25,7 @@
                         <div class="absolute inset-0 bg-rose-500 mix-blend-multiply"></div>
                         <div class="absolute inset-0 bg-gradient-to-t from-rose-600 via-rose-600 opacity-90"></div>
                         <div class="relative px-8">
-                            <div>
+                            <div class="hidden">
                                 <img class="h-12" src="https://tailwindui.com/img/logos/workcation.svg?color=white" alt="Workcation" />
                             </div>
                             <blockquote class="mt-8">
@@ -75,7 +75,7 @@
                 </div>
 
                 <!-- Stats section -->
-                <div class="mt-10">
+                <div class="mt-10 hidden">
                     <dl class="grid grid-cols-2 gap-x-4 gap-y-8">
                         <div class="border-t-2 border-gray-100 pt-6">
                             <dt class="text-base font-medium text-gray-500">Founded</dt>

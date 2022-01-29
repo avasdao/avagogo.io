@@ -7,7 +7,7 @@
 
             <div class="mt-8">
                 <div>
-                    <a href="#" class="inline-flex space-x-4">
+                    <a href="https://moralis.io/avalanche-hackathon/" target="_blank" class="inline-flex space-x-4">
                         <span class="rounded bg-rose-50 px-2.5 py-1 text-xs font-semibold text-rose-500 tracking-wide uppercase">
                             What's new
                         </span>
@@ -23,24 +23,25 @@
                 <div class="mt-6 sm:max-w-xl">
                     <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
                         <span class="text-blue-500 text-5xl">DeFi Is HARD!</span>
-                        <span class="block text-gray-700">Copy Strategies From TOP Traders</span>
+                        <span class="block text-gray-700">Copy Winning Strategies From TOP Traders</span>
                     </h1>
 
                     <p class="mt-6 text-xl text-gray-500">
-                        Ava GoGo is an exclusive Social DeFi community where you can learn for the best crpyto traders in the world.
+                        Ava GoGo is the premier <strong>Social DeFi</strong> community.
+                        Learn from and share with the best crypto traders in the world.
                     </p>
 
-                    <div class="mt-1">
+                    <div class="mt-1 pl-5">
                         <strong class="block text-green-500">
-                            <span class="text-2xl">&rarr;</span> Determine your risk level
+                            <span class="text-2xl">&rarr;</span> Determine your risk level 🧐
                         </strong>
 
                         <strong class="block text-green-500">
-                            <span class="text-2xl">&rarr;</span> Follow expert strategies
+                            <span class="text-2xl">&rarr;</span> Follow expert strategies 📈
                         </strong>
 
                         <strong class="block text-green-500">
-                            <span class="text-2xl">&rarr;</span> Watch your portfolio grow
+                            <span class="text-2xl">&rarr;</span> Watch your portfolio grow 🚀
                         </strong>
                     </div>
                 </div>
@@ -93,11 +94,11 @@
                 </div>
 
                 <div class="flex flex-col">
-                    <button class="mt-5 py-2 px-5 bg-red-300 border-2 border-red-500 text-xl text-white font-bold rounded-lg" @click="toggleJoin = !toggleJoin">
+                    <div class="mt-5 py-2 px-5 bg-indigo-300 border-2 border-indigo-500 text-xl text-white font-bold rounded-lg">
                         Join Our Hackathon Team!
-                    </button>
+                    </div>
 
-                    <div class="flex flex-col sm:flex-row mt-2 items-center justify-between" v-if="toggleJoin">
+                    <div class="flex flex-col sm:flex-row mt-2 items-center justify-between">
                         <input class="w-full rounded-lg" type="email" v-model="email" placeholder="Please enter your email address here" />
 
                         <button class="w-full sm:w-72 sm:ml-3 mt-3 sm:mt-0 py-2 px-5 bg-yellow-500 border-2 border-yellow-700 text-xl text-white font-bold rounded-lg" @click="sendRequest">
@@ -118,7 +119,6 @@ export default {
     data: function () {
         return {
             email: null,
-            toggleJoin: null,
         }
     },
     methods: {
@@ -146,8 +146,6 @@ export default {
             console.log('RESPONSE', response)
             if (response) {
                 this.email = ''
-                
-                this.toggleJoin = !this.toggleJoin
 
                 alert(`Your request was sent successfully!`)
             }
@@ -156,7 +154,7 @@ export default {
 
     },
     created: function () {
-        this.toggleJoin = false
+        //
     },
 }
 </script>

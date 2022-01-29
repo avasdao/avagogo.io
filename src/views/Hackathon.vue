@@ -488,7 +488,6 @@ export default {
     data: function () {
         return {
             email: null,
-            toggleJoin: null,
             showMobileMenu: null,
         }
     },

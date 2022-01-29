@@ -29,25 +29,27 @@
                             Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque.
                         </p>
                     </div>
-                    <form action="#" class="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
+                    <div class="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
                         <div class="min-w-0 flex-1">
                             <label for="cta-email" class="sr-only">Email address</label>
                             <input
                                 id="cta-email"
                                 type="email"
+                                v-model="email"
                                 class="block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500"
                                 placeholder="Enter your email"
                             />
                         </div>
                         <div class="mt-4 sm:mt-0 sm:ml-3">
                             <button
+                                @click="sendRequest"
                                 type="submit"
                                 class="block w-full rounded-md border border-transparent px-5 py-3 bg-gray-900 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10"
                             >
                                 Notify me
                             </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,8 +58,49 @@
 
 <script>
 export default {
-  props: {
-    msg: String
-  }
+    props: {
+        msg: String
+    },
+    data: function () {
+        return {
+            email: null,
+            showMobileMenu: null,
+        }
+    },
+    methods: {
+        async sendRequest() {
+            if (!this.email) {
+                return alert('Please provide your email address.')
+            }
+
+            const url = 'https://api.telr.io/v1/slack/invite'
+
+            const data = {
+                action: 'Requesting invitation to #telr slack channel.',
+                fullName: 'Ava GoGo Hackathon',
+                contact: this.email,
+            }
+
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+
+            console.log('RESPONSE', response)
+            if (response) {
+                this.email = ''
+
+                alert(`Your request was sent successfully!`)
+            }
+
+        },
+
+    },
+    created: function () {
+        this.showMobileMenu = false
+    },
 }
 </script>

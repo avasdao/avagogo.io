@@ -31,15 +31,12 @@
 
             <Sponsors />
         </main>
-
-        <Footer />
     </div>
 </template>
 
 <script>
 /* Import components. */
 import Intro from '@/components/Intro'
-import Footer from '@/components/Footer'
 import Mission from '@/components/Mission'
 import Sponsors from '@/components/Sponsors'
 import Launch from '@/components/Launch'
@@ -47,7 +44,6 @@ import Launch from '@/components/Launch'
 export default {
     components: {
         Intro,
-        Footer,
         Mission,
         Sponsors,
         Launch,
