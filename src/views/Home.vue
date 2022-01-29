@@ -28,8 +28,6 @@
             <Mission />
 
             <Launch />
-
-            <Sponsors />
         </main>
     </div>
 </template>
@@ -38,14 +36,12 @@
 /* Import components. */
 import Intro from '@/components/Intro'
 import Mission from '@/components/Mission'
-import Sponsors from '@/components/Sponsors'
 import Launch from '@/components/Launch'
 
 export default {
     components: {
         Intro,
         Mission,
-        Sponsors,
         Launch,
     },
     methods: {

@@ -18,8 +18,16 @@ const routes = [
         component: () => import(/* webpackChunkName: "core" */ '../views/Gogo.vue')
     },
     {
+        path: '/legal',
+        component: () => import(/* webpackChunkName: "core" */ '../views/Legal.vue')
+    },
+    {
         path: '/privacy',
         component: () => import(/* webpackChunkName: "core" */ '../views/Privacy.vue')
+    },
+    {
+        path: '/sponsors',
+        component: () => import(/* webpackChunkName: "core" */ '../views/Sponsors.vue')
     },
     {
         path: '/team',
@@ -33,7 +41,7 @@ const routes = [
     },
     {
         path: '/hackathon/alpha-finance-lab',
-        component: () => import(/* webpackChunkName: "core" */ '../views/hackathon/Alpha.vue')
+        component: () => import(/* webpackChunkName: "core" */ '../views/HackathonDetail.vue')
     },
     {
         path: '/hackathon/benqi',

@@ -5,7 +5,9 @@
         <div class="max-w-md mx-auto py-12 px-4 sm:max-w-lg sm:pt-16 sm:px-6 lg:max-w-7xl lg:pt-24 lg:pb-16 lg:px-8">
             <div class="xl:grid xl:grid-cols-3 xl:gap-8">
                 <div class="space-y-8 xl:col-span-1">
-                    <img class="h-16" :src="require('../assets/logo.png')" alt="Ava Nakamoto" />
+                    <router-link to="/">
+                        <img class="h-16" :src="require('../assets/logo.png')" alt="Ava Nakamoto" />
+                    </router-link>
 
                     <p class="text-gray-400 text-base">
                         Ava Gogo makes DeFi easy enough for <strong>ANYONE</strong> to earn the highest yields of crypto's <strong>TOP</strong> traders.
@@ -74,46 +76,18 @@
                             </ul>
                         </div>
 
-                        <div class="mt-12 md:mt-0">
-                            <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">
-                                Support
-                            </h3>
-
-                            <ul role="list" class="mt-4 space-y-4">
-                                <li>
-                                    <router-link to="/contact" class="text-base text-gray-400 hover:text-gray-300">
-                                        Contact Us
-                                    </router-link>
-                                </li>
-
-                                <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Documentation
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Pricing
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Guides
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">
                                 Resources
                             </h3>
 
                             <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <router-link to="/hackathon" class="text-base text-gray-400 hover:text-gray-300">
+                                        Hackathon
+                                    </router-link>
+                                </li>
+
                                 <li>
                                     <a href="https://canvas.avagogo.io/" target="_blank" class="text-base text-gray-400 hover:text-gray-300">
                                         Lean Canvas
@@ -128,6 +102,9 @@
                             </ul>
                         </div>
 
+                    </div>
+
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div class="mt-12 md:mt-0">
                             <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">
                                 Managed DAO
@@ -153,24 +130,47 @@
                                 </li>
 
                                 <li>
-                                    <router-link to="/privacy" class="text-base text-gray-400 hover:text-gray-300">
-                                        Privacy
-                                    </router-link>
-                                </li>
-
-                                <li>
                                     <router-link to="/legal" class="text-base text-gray-400 hover:text-gray-300">
                                         Legal
                                     </router-link>
                                 </li>
                             </ul>
                         </div>
+
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">
+                                Support
+                            </h3>
+
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <router-link to="/contact" class="text-base text-gray-400 hover:text-gray-300">
+                                        Contact Us
+                                    </router-link>
+                                </li>
+
+                                <li>
+                                    <router-link to="/privacy" class="text-base text-gray-400 hover:text-gray-300">
+                                        Privacy
+                                    </router-link>
+                                </li>
+
+                                <li>
+                                    <router-link to="/sponsors" class="text-base text-gray-400 hover:text-gray-300">
+                                        Sponsors
+                                    </router-link>
+                                </li>
+
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
             <div class="mt-12 border-t border-gray-700 pt-8">
                 <p class="text-base text-gray-400 xl:text-center">
-                    &copy; 2022 Ava GoGo MDAO. All rights reserved.
+                    &copy; {{curYear}} Ava GoGo MDAO. All rights reserved.
                 </p>
             </div>
         </div>
@@ -178,9 +178,20 @@
 </template>
 
 <script>
+/* Import modules. */
+import moment from 'moment'
+
 export default {
     props: {
         msg: String
-    }
+    },
+    data: () => {
+        return {
+            curYear: null,
+        }
+    },
+    created: function () {
+        this.curYear = moment().format('YYYY')
+    },
 }
 </script>

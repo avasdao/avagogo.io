@@ -1,14 +1,13 @@
 <template>
-    <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="bg-gray-100">
         <div class="pt-12 sm:pt-16 lg:pt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
-                        Join Our Winning Team!
+                        Back Our Winning Team!
                     </h2>
                     <p class="mt-4 text-xl text-gray-600">
-                        We're looking for a few talented developers and short-list of ambitious sponsors to carry us over the top.
+                        We're looking for a short-list of ambitious sponsors to carry us over the top.
                     </p>
                 </div>
             </div>
