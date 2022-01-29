@@ -67,8 +67,6 @@
                     <li>Our built-in notification system will BOOST product engagement.</li>
                 </ul>
 
-                <pre>{{JSON.stringify(sponsor, null, 4)}}</pre>
-
                 <p>
                     Quis semper vulputate aliquam venenatis egestas sagittis quisque orci. Donec commodo sit viverra aliquam porttitor ultrices gravida eu. Tincidunt leo, elementum mattis elementum ut nisl, justo, amet, mattis. Nunc purus, diam
                     commodo tincidunt turpis. Amet, duis sed elit interdum dignissim.

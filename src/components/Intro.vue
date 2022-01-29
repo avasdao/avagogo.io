@@ -1,11 +1,11 @@
 <template>
     <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
         <div>
-            <div>
-                <img class="h-24 w-auto" :src="require('../assets/disco.png')" alt="Workflow" />
+            <div class="hidden">
+                <img class="h-24 w-auto" :src="require('../assets/logo.png')" alt="Ava Nakamoto" />
             </div>
 
-            <div class="mt-8">
+            <div class="mt-3">
                 <div>
                     <a href="https://moralis.io/avalanche-hackathon/" target="_blank" class="inline-flex space-x-4">
                         <span class="rounded bg-rose-50 px-2.5 py-1 text-xs font-semibold text-rose-500 tracking-wide uppercase">

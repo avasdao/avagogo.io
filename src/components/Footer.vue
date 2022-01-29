@@ -76,7 +76,7 @@
                             </ul>
                         </div>
 
-                        <div>
+                        <div class="mt-12 md:mt-0">
                             <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">
                                 Resources
                             </h3>
@@ -105,7 +105,7 @@
                     </div>
 
                     <div class="md:grid md:grid-cols-2 md:gap-8">
-                        <div class="mt-12 md:mt-0">
+                        <div>
                             <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">
                                 Managed DAO
                             </h3>
@@ -169,8 +169,12 @@
             </div>
 
             <div class="mt-12 border-t border-gray-700 pt-8">
-                <p class="text-base text-gray-400 xl:text-center">
+                <p class="hidden sm:block text-base text-gray-400 text-center">
                     &copy; {{curYear}} Ava GoGo MDAO. All rights reserved.
+                </p>
+
+                <p class="sm:hidden text-base text-gray-400 text-center">
+                    &copy; {{curYear}} Ava GoGo MDAO.<br />All rights reserved.
                 </p>
             </div>
         </div>
