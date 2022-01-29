@@ -18,6 +18,10 @@ const routes = [
         component: () => import(/* webpackChunkName: "core" */ '../views/Gogo.vue')
     },
     {
+        path: '/privacy',
+        component: () => import(/* webpackChunkName: "core" */ '../views/Privacy.vue')
+    },
+    {
         path: '/team',
         component: () => import(/* webpackChunkName: "core" */ '../views/Team.vue')
     },

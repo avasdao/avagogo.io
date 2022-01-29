@@ -4,7 +4,7 @@
             <div class="bg-gray-50">
                 <nav class="relative max-w-7xl mx-auto flex items-center justify-between pt-8 px-6 xl:px-8" aria-label="Global">
                     <div class="flex items-center justify-between w-full lg:w-auto">
-                        <a href="#">
+                        <a href="javascript://">
                             <span class="sr-only">Workflow</span>
                             <img class="h-10 w-auto sm:h-16" :src="require('../assets/logo.png')" alt="" />
                         </a>
@@ -23,16 +23,16 @@
                         </div>
                     </div>
                     <div class="hidden space-x-10 lg:flex lg:ml-10">
-                        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-600">Work</a>
+                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-600">Work</a>
 
-                        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-600">Services</a>
+                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-600">Services</a>
 
-                        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-600">About</a>
+                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-600">About</a>
 
-                        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-600">Blog</a>
+                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-600">Blog</a>
                     </div>
                     <div class="hidden lg:flex lg:items-center lg:space-x-6">
-                        <a href="#" class="py-2 px-6 bg-white border border-transparent rounded-md shadow-md text-base font-medium text-grape-600 hover:bg-gray-50">
+                        <a href="javascript://" class="py-2 px-6 bg-white border border-transparent rounded-md shadow-md text-base font-medium text-grape-600 hover:bg-gray-50">
                             Contact
                         </a>
                     </div>
@@ -67,16 +67,16 @@
                     </div>
                     <div class="pt-5 pb-6">
                         <div class="px-2 space-y-1">
-                            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Work</a>
+                            <a href="javascript://" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Work</a>
 
-                            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Services</a>
+                            <a href="javascript://" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Services</a>
 
-                            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">About</a>
+                            <a href="javascript://" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">About</a>
 
-                            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Blog</a>
+                            <a href="javascript://" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Blog</a>
                         </div>
                         <div class="mt-6 px-5">
-                            <a href="#" class="block text-center w-full py-2 px-4 border border-transparent rounded-md shadow bg-grape-500 text-white font-medium hover:bg-grape-600">Contact</a>
+                            <a href="javascript://" class="block text-center w-full py-2 px-4 border border-transparent rounded-md shadow bg-grape-500 text-white font-medium hover:bg-grape-600">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -105,10 +105,12 @@
                     <div class="lg:pr-8">
                         <div class="max-w-md mx-auto sm:max-w-lg lg:mx-0">
                             <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-                                Let's work together
+                                Are you a BUIDLer?
                             </h2>
                             <p class="mt-4 text-lg text-gray-500 sm:mt-3">
-                                We’d love to hear from you! Send us a message using the form opposite, or email us. We’d love to hear from you! Send us a message using the form opposite, or email us.
+                                We’d love to hear from you!
+                                You are welcome to connect with our team on Slack.
+                                Send us a request using the form below, or email us.
                             </p>
 
                             <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
@@ -131,7 +133,9 @@
 
                                 <p class="mt-3 text-sm text-gray-500">
                                     We care about the protection of your data. Read our
-                                    <a href="javascript://" class="font-medium text-gray-900 underline">Privacy Policy</a>.
+                                    <router-link to="/privacy" class="font-medium text-gray-900 underline">
+                                        Privacy Policy
+                                    </router-link>.
                                 </p>
                             </div>
 
@@ -144,10 +148,11 @@
             <div class="bg-grape-400">
                 <div class="max-w-md mx-auto text-center py-16 px-4 sm:max-w-2xl sm:py-24 sm:px-6 lg:px-8 lg:py-32">
                     <h2 class="text-3xl font-extrabold sm:text-4xl">
-                        <span class="block text-white">Looking for a new career?</span>
-                        <span class="block text-grape-900">We’re hiring.</span>
+                        <span class="block text-white">Looking for a new direction?</span>
+                        <span class="block text-grape-900">Join Our Award Winning Team!</span>
                     </h2>
-                    <a href="#" class="mt-8 w-full inline-flex items-center justify-center py-3 px-5 bg-white border border-transparent rounded-md shadow-md text-base font-medium text-grape-600 hover:bg-grape-50 sm:w-auto">
+
+                    <a href="javascript:alert('Please join our Slack for the latest opportunities.')" class="mt-8 w-full inline-flex items-center justify-center py-3 px-5 bg-white border border-transparent rounded-md shadow-md text-base font-medium text-grape-600 hover:bg-grape-50 sm:w-auto">
                         <span>See open positions</span>
                         <!-- Heroicon name: solid/external-link -->
                         <svg class="ml-3 h-5 w-5 flex-shrink-0 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

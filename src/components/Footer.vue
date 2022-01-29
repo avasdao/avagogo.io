@@ -46,22 +46,17 @@
 
                     </div>
                 </div>
+
                 <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">
-                                Solutions
+                                DeFi Corner
                             </h3>
                             <ul role="list" class="mt-4 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Marketing
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Analytics
+                                    <a href="https://99bitcoins.com/what-is-defi/" target="_blank" class="text-base text-gray-400 hover:text-gray-300">
+                                        What Is DeFi?
                                     </a>
                                 </li>
 
@@ -78,15 +73,17 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="mt-12 md:mt-0">
                             <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">
                                 Support
                             </h3>
+
                             <ul role="list" class="mt-4 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Pricing
-                                    </a>
+                                    <router-link to="/contact" class="text-base text-gray-400 hover:text-gray-300">
+                                        Contact Us
+                                    </router-link>
                                 </li>
 
                                 <li>
@@ -97,76 +94,74 @@
 
                                 <li>
                                     <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Guides
+                                        Pricing
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        API Status
+                                        Guides
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">
-                                Company
+                                Resources
                             </h3>
+
                             <ul role="list" class="mt-4 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        About
+                                    <a href="https://canvas.avagogo.io/" target="_blank" class="text-base text-gray-400 hover:text-gray-300">
+                                        Lean Canvas
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Blog
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Jobs
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Press
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Partners
+                                    <a href="https://github.com/modenero/contracts" target="_blank" class="text-base text-gray-400 hover:text-gray-300">
+                                        Smart Contracts
                                     </a>
                                 </li>
                             </ul>
                         </div>
+
                         <div class="mt-12 md:mt-0">
                             <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase">
-                                Legal
+                                Managed DAO
                             </h3>
+
                             <ul role="list" class="mt-4 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Claim
-                                    </a>
+                                    <router-link to="/gogo" class="text-base text-gray-400 hover:text-gray-300">
+                                        $GOGO Tokens
+                                    </router-link>
                                 </li>
 
                                 <li>
                                     <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
+                                        Ava Nakamoto
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <router-link to="/team" class="text-base text-gray-400 hover:text-gray-300">
+                                        Our Team
+                                    </router-link>
+                                </li>
+
+                                <li>
+                                    <router-link to="/privacy" class="text-base text-gray-400 hover:text-gray-300">
                                         Privacy
-                                    </a>
+                                    </router-link>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base text-gray-400 hover:text-gray-300">
-                                        Terms
-                                    </a>
+                                    <router-link to="/legal" class="text-base text-gray-400 hover:text-gray-300">
+                                        Legal
+                                    </router-link>
                                 </li>
                             </ul>
                         </div>
