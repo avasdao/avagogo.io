@@ -103,7 +103,6 @@
 
 <script>
 /* Import modules. */
-import { ethers } from 'ethers'
 import { inject } from 'vue'
 
 /* Import components. */
