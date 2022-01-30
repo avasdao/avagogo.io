@@ -14,8 +14,16 @@ const routes = [
         component: () => import(/* webpackChunkName: "core" */ '../views/Contact.vue')
     },
     {
+        path: '/download',
+        component: () => import(/* webpackChunkName: "core" */ '../views/Download.vue')
+    },
+    {
         path: '/gogo',
-        component: () => import(/* webpackChunkName: "core" */ '../views/Gogo.vue')
+        component: () => import(/* webpackChunkName: "core" */ '../views/GOGO.vue')
+    },
+    {
+        path: '/gov',
+        component: () => import(/* webpackChunkName: "core" */ '../views/Gov.vue')
     },
     {
         path: '/legal',

@@ -89,8 +89,14 @@
                                 </li>
 
                                 <li>
-                                    <a href="https://canvas.avagogo.io/" target="_blank" class="text-base text-gray-400 hover:text-gray-300">
+                                    <a href="https://canvas.avagogo.io" target="_blank" class="text-base text-gray-400 hover:text-gray-300">
                                         Lean Canvas
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://github.com/modenero/avagogo" target="_blank" class="text-base text-gray-400 hover:text-gray-300">
+                                        Source Code
                                     </a>
                                 </li>
 
@@ -113,7 +119,13 @@
                             <ul role="list" class="mt-4 space-y-4">
                                 <li>
                                     <router-link to="/gogo" class="text-base text-gray-400 hover:text-gray-300">
-                                        $GOGO Tokens
+                                        $GOGO
+                                    </router-link>
+                                </li>
+
+                                <li>
+                                    <router-link to="/gov" class="text-base text-gray-400 hover:text-gray-300">
+                                        Governance
                                     </router-link>
                                 </li>
 
@@ -125,15 +137,10 @@
 
                                 <li>
                                     <router-link to="/team" class="text-base text-gray-400 hover:text-gray-300">
-                                        Our Team
+                                        Meet The Team
                                     </router-link>
                                 </li>
 
-                                <li>
-                                    <router-link to="/legal" class="text-base text-gray-400 hover:text-gray-300">
-                                        Legal
-                                    </router-link>
-                                </li>
                             </ul>
                         </div>
 
@@ -161,6 +168,11 @@
                                     </router-link>
                                 </li>
 
+                                <li>
+                                    <router-link to="/legal" class="text-base text-gray-400 hover:text-gray-300">
+                                        Legal
+                                    </router-link>
+                                </li>
                             </ul>
                         </div>
 
