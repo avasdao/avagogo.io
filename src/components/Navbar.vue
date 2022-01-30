@@ -6,7 +6,7 @@
                 <!-- Logo section -->
                 <router-link to="/" class="flex items-center px-2 lg:px-0 xl:w-64">
                     <div class="flex-shrink-0">
-                        <img class="h-12 w-auto" :src="require('../assets/disco.png')" alt="Workflow" />
+                        <img class="h-12 w-auto" :src="require('../assets/logo.png')" alt="Ava Nakamoto" />
                     </div>
                 </router-link>
 

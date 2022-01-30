@@ -93,7 +93,7 @@
                     </div>
                 </div>
 
-                <Strategies />
+                <Funds />
             </div>
 
             <Traders />
@@ -107,13 +107,13 @@ import { inject } from 'vue'
 
 /* Import components. */
 import Navbar from '@/components/Navbar.vue'
-import Strategies from '@/components/Strategies.vue'
+import Funds from '@/components/Funds.vue'
 import Traders from '@/components/Traders.vue'
 
 export default {
     components: {
         Navbar,
-        Strategies,
+        Funds,
         Traders,
     },
     data: () => {
