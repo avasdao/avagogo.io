@@ -38,6 +38,10 @@
                                         </div>
                                     </div>
 
+                                    <div v-if="isAuthenticated">
+                                        {{ user.get('ethAddress') }}
+                                    </div>
+
                                     <div v-if="isAuthenticated" class="flex flex-col sm:flex-row xl:flex-col">
                                         <button
                                             type="button"
@@ -46,14 +50,12 @@
                                             Add New Strategy
                                         </button>
                                         <button
+                                             @click="logout"
                                             type="button"
-                                            class="mt-3 inline-flex items-center justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 xl:ml-0 xl:mt-3 xl:w-full"
+                                            class="mt-3 inline-flex items-center justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-100 bg-red-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 xl:ml-0 xl:mt-3 xl:w-full"
                                         >
-                                            Invite Team
+                                            Sign Out
                                         </button>
-
-                                        {{ user.get('ethAddress') }}
-                                        <button @click="logout">Logout</button>
                                     </div>
                                     <div v-else class="flex flex-col sm:flex-row xl:flex-col">
                                         <button
@@ -121,139 +123,81 @@ export default {
         }
     },
     computed: {
+        /**
+         * Is Authenticated
+         */
         isAuthenticated() {
-            // return false
+            console.log('STORE (state):', this.$store.state)
+
+            if (!this.$store.state || typeof this.$store.state === 'undefined') {
+                return false
+            }
+
+            if (!this.$store.state.user || typeof this.$store.state.user === 'undefined') {
+                return false
+            }
+
             return Object.keys(this.$store.state.user).length > 0
         },
+        /**
+         * User
+         */
         user() {
-            // return {}
+            if (!this.$store.state || typeof this.$store.state === 'undefined') {
+                return false
+            }
+
+            if (!this.$store.state.user || typeof this.$store.state.user === 'undefined') {
+                return false
+            }
+
             return this.$store.state.user
         },
     },
     methods: {
-        async web3Auth() {
-            /* Close mobile menu. */
-            this.showMobileMenu = false
-
-            /* Validate embedded Web3 objects. */
-            if (!window.ethereum && !window.bitcoin) {
-                /* Validate embedded ethereum object. */
-                if (window.bitcoin) {
-                    console.info('Found Bitcoin provider.')
-                } else if (window.ethereum) {
-                    console.info('Found Ethereum provider.')
-                } else {
-                    return console.error('No Web3 provider found.')
-                }
-            }
-
-            /* Initialize provider. */
-            const provider = new ethers
-                .providers
-                .Web3Provider(window.ethereum, 'any')
-
-            /* Prompt user for account connections. */
-            await provider
-                .send('eth_requestAccounts', [])
-                .catch(err => {
-                    console.error('ERROR: ETH REQUEST ACCOUNTS', err)
-                })
-
-            /* Set signer. */
-            const signer = provider.getSigner()
-            // console.log('SIGNER', signer)
-
-            /* Request account. */
-            this.account = await signer
-                .getAddress()
-                .catch(err => {
-                    console.error('ERROR: NO SIGNER', err)
-                })
-            console.log('Account:', this.account)
-
-            if (!this.account) {
-                return alert('Oops! Please unlock your Metamask or Web3 wallet to continue.')
-            }
-
-            // All properties on a domain are optional
-            const domain = {
-                name: 'BITPAWNS',
-                version: '1',
-                chainId: 0x2711, // FIXME: This must be dynamically detected.
-                // verifyingContract: '0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC'
-            }
-
-            /* Initialize a named list of all type definitions. */
-            const types = {
-                Account: [
-                    { name: 'name', type: 'string' },
-                    { name: 'email', type: 'string' },
-                ],
-                Session: [
-                    { name: 'site', type: 'string' },
-                    { name: 'action', type: 'string' },
-                    { name: 'account', type: 'Account' },
-                    { name: 'ip_address', type: 'string' },
-                    { name: 'notes', type: 'string' },
-                ],
-            }
-
-            /* Build data package. */
-            const pkg = {
-                site: 'BITPAWNS Admin Center',
-                action: 'User Authorization',
-                account: {
-                    name: 'Anonymous',
-                    email: 'n/a'
-                },
-                ip_address: '192.168.1.1',
-                notes: 'none',
-            }
-
-            let signature
-
-            signature = await signer
-                ._signTypedData(domain, types, pkg)
-                .catch(err => {
-                    console.error('ERROR: CANNOT SIGNED TYPED DATA', err)
-                })
-
-            /* Validate signature. */
-            if (!signature) {
-                // TODO: Add UI popup for user.
-
-                const message = `BITPAWNS Admin Center is requesting Web3 authorization to sign-in Anonymous (n/a) from [192.168.1.1].`
-
-                signature = await signer
-                    .signMessage(message)
-                    .catch(err => {
-                        console.error('ERROR: SIGNING MESSAGE', err)
-                    })
-            }
-            console.log('SIGNATURE', signature)
-
-            /* Validate signature. */
-            if (signature) {
-                /* Go to admin page. */
-                this.$router.push('/admin')
-            }
-
+        /**
+         * Set User
+         */
+        setUser(_user) {
+            /* Set user. */
+            this.$store.commit('setUser', _user)
         },
 
-        setUser(payload) {
-            this.$store.commit('setUser', payload)
-        },
-
+        /**
+         * Login
+         */
         async login () {
-            const user = await this.$moralis.Web3.authenticate()
+            // const user = await this.$moralis.Web3.authenticate()
+            const user = await this.$moralis.Web3
+                .authenticate({ signingMessage: 'Welcome to Ava GoGo. Please authenticate your account -- ' })
+                .catch(err => {
+                    console.error(err)
+
+                    if (err && err.code && err.code === 4100) {
+                        alert('Please sign-in to your Web3 wallet to continue.')
+                    } else if (err && err.message) {
+                        alert(err.message)
+                    }
+                })
+
+            /* Save user. */
             this.setUser(user)
         },
 
+        /**
+         * Logout
+         */
         async logout() {
             await this.$moralis.User.logOut()
+                .catch(err => {
+                    console.error(err)
+                })
             this.setUser({})
         },
 
+        /**
+         * Handle Current User
+         */
         handleCurrentUser() {
             const user = this.$moralis.User.current()
             // console.log('MORALIS USER', user)
@@ -270,6 +214,7 @@ export default {
 
     },
     mounted: function () {
+        /* Handle current user. */
         this.handleCurrentUser()
     },
 }
