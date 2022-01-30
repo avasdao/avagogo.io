@@ -37,8 +37,8 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <!-- Action buttons -->
-                                    <div class="flex flex-col sm:flex-row xl:flex-col">
+
+                                    <div v-if="isAuthenticated" class="flex flex-col sm:flex-row xl:flex-col">
                                         <button
                                             type="button"
                                             class="inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 xl:w-full"
@@ -52,15 +52,17 @@
                                             Invite Team
                                         </button>
 
-                                        <div class="mt-10">
-                                          <template v-if="isAuthenticated">
-                                            {{ user.get('ethAddress') }} <button @click="logout">Logout</button>
-                                          </template>
-                                          <template v-else>
-                                            <button @click="login">Connect wallet</button>
-                                          </template>
-                                        </div>
-
+                                        {{ user.get('ethAddress') }}
+                                        <button @click="logout">Logout</button>
+                                    </div>
+                                    <div v-else class="flex flex-col sm:flex-row xl:flex-col">
+                                        <button
+                                            @click="login"
+                                            type="button"
+                                            class="inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 xl:w-full"
+                                        >
+                                            Connect Your Wallet
+                                        </button>
                                     </div>
                                 </div>
                                 <!-- Meta info -->
