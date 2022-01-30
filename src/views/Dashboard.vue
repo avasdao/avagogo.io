@@ -51,6 +51,16 @@
                                         >
                                             Invite Team
                                         </button>
+
+                                        <div class="mt-10">
+                                          <template v-if="isAuthenticated">
+                                            {{ user.get('ethAddress') }} <button @click="logout">Logout</button>
+                                          </template>
+                                          <template v-else>
+                                            <button @click="login">Connect wallet</button>
+                                          </template>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <!-- Meta info -->
@@ -90,6 +100,7 @@
 <script>
 /* Import modules. */
 import { ethers } from 'ethers'
+import { inject } from 'vue'
 
 /* Import components. */
 import Navbar from '@/components/Navbar.vue'
@@ -101,6 +112,21 @@ export default {
         Navbar,
         Strategies,
         Traders,
+    },
+    data: () => {
+        return {
+            $moralis: null,
+        }
+    },
+    computed: {
+        isAuthenticated() {
+            // return false
+            return Object.keys(this.$store.state.user).length > 0
+        },
+        user() {
+            // return {}
+            return this.$store.state.user
+        },
     },
     methods: {
         async web3Auth() {
@@ -212,7 +238,37 @@ export default {
 
         },
 
+        setUser(payload) {
+            this.$store.commit('setUser', payload)
+        },
 
+        async login () {
+            const user = await this.$moralis.Web3.authenticate()
+            this.setUser(user)
+        },
+
+        async logout() {
+            await this.$moralis.User.logOut()
+            this.setUser({})
+        },
+
+        handleCurrentUser() {
+            const user = this.$moralis.User.current()
+            // console.log('MORALIS USER', user)
+
+            if (user) {
+                this.setUser(user)
+            }
+        },
+
+    },
+    created: function () {
+        // const store = useStore()
+        this.$moralis = inject('$moralis')
+
+    },
+    mounted: function () {
+        this.handleCurrentUser()
     },
 }
 </script>

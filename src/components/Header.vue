@@ -281,6 +281,18 @@ export default {
             showHackathon: null,
         }
     },
+    watch: {
+        $route(to) {
+            // console.log('HEADER $route (to):', to, from)
+
+            /* Manage header view. */
+            if (to.path === '/dashboard') {
+                this.showHeader = false
+            } else {
+                this.showHeader = true
+            }
+        }
+    },
     methods: {
         closeAll() {
             this.showMenu = false
