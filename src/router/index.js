@@ -56,16 +56,8 @@ const routes = [
         component: () => import(/* webpackChunkName: "core" */ '../views/hackathon/BENQI.vue')
     },
     {
-        path: '/hackathon/chainlink',
-        component: () => import(/* webpackChunkName: "core" */ '../views/hackathon/Chainlink.vue')
-    },
-    {
         path: '/hackathon/colony',
         component: () => import(/* webpackChunkName: "core" */ '../views/hackathon/Colony.vue')
-    },
-    {
-        path: '/hackathon/covalent',
-        component: () => import(/* webpackChunkName: "core" */ '../views/hackathon/Covalent.vue')
     },
     {
         path: '/hackathon/yield-yak',
