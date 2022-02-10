@@ -126,19 +126,48 @@ export default {
             sponsor: null,
         }
     },
+    watch: {
+        $route(to, from) {
+            console.log('ROUTE CHANGE (watch):', to, from)
+
+            switch(to.path) {
+            case '/hackathon/alpha-finance-lab':
+                this.sponsor = require('./hackathon/Alpha.json')
+                break
+            case '/hackathon/benqi':
+                this.sponsor = require('./hackathon/BENQI.json')
+                break
+            case '/hackathon/colony':
+                this.sponsor = require('./hackathon/Colony.json')
+                break
+            case '/hackathon/yield-yak':
+                this.sponsor = require('./hackathon/YieldYak.json')
+                break
+            }
+        }
+    },
     methods: {
         //
     },
     created: function () {
         const route = this.$route
-        console.log('ROUTE', route)
+        // console.log('ROUTE', route)
 
         const path = route.path
-        console.log('PATH', path)
+        // console.log('PATH', path)
 
         switch(path) {
         case '/hackathon/alpha-finance-lab':
             this.sponsor = require('./hackathon/Alpha.json')
+            break
+        case '/hackathon/benqi':
+            this.sponsor = require('./hackathon/BENQI.json')
+            break
+        case '/hackathon/colony':
+            this.sponsor = require('./hackathon/Colony.json')
+            break
+        case '/hackathon/yield-yak':
+            this.sponsor = require('./hackathon/YieldYak.json')
             break
         }
     },

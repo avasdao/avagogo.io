@@ -3,82 +3,47 @@
         <div class="bg-white w-1/2"></div>
         <div class="bg-gray-50 w-1/2"></div>
     </div>
+
     <div class="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
         <nav class="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
             <div>
                 <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                    Sponsor Details
+                    Featured Sponsors
                 </h3>
+
                 <ul role="list" class="mt-5 space-y-6">
                     <li class="flow-root">
-                        <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
-                            <!-- Heroicon name: outline/information-circle -->
-                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span class="ml-4">About</span>
+                        <a @click="loadAlpha" href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-yellow-200">
+                            <img class="h-8" src="https://i.imgur.com/A6kPXTc.png" />
+
+                            <span class="ml-4">Alpha Finance Lab</span>
                         </a>
                     </li>
 
                     <li class="flow-root">
-                        <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
-                            <!-- Heroicon name: outline/office-building -->
-                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                                />
-                            </svg>
-                            <span class="ml-4">Customers</span>
+                        <a @click="loadBENQI" href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-yellow-200">
+                            <img class="h-8" src="https://i.imgur.com/4r0Sjfq.png" />
+
+                            <span class="ml-4 hidden">BENQI</span>
                         </a>
                     </li>
 
                     <li class="flow-root">
-                        <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
-                            <!-- Heroicon name: outline/newspaper -->
-                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
-                                />
-                            </svg>
-                            <span class="ml-4">Press</span>
+                        <a @click="loadColony" href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-yellow-200">
+                            <img class="h-8" src="https://i.imgur.com/TRh2svH.png" />
+
+                            <span class="ml-4 hidden">Colony</span>
                         </a>
                     </li>
 
                     <li class="flow-root">
-                        <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
-                            <!-- Heroicon name: outline/briefcase -->
-                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                />
-                            </svg>
-                            <span class="ml-4">Careers</span>
+                        <a @click="loadYieldYak" href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-yellow-200">
+                            <img class="h-8" src="https://i.imgur.com/tDe10Qs.png" />
+
+                            <span class="ml-4">Yield Yak</span>
                         </a>
                     </li>
 
-                    <li class="flow-root">
-                        <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
-                            <!-- Heroicon name: outline/shield-check -->
-                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                                />
-                            </svg>
-                            <span class="ml-4">Privacy</span>
-                        </a>
-                    </li>
                 </ul>
             </div>
 
@@ -86,67 +51,45 @@
                 <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
                     Resources
                 </h3>
+
                 <ul role="list" class="mt-5 space-y-6">
                     <li class="flow-root">
-                        <a href="https://canvas.avagogo.io" target="_blank" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
-                            <!-- Heroicon name: outline/user-group -->
-                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                                />
-                            </svg>
+                        <a href="https://canvas.avagogo.io" target="_blank" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-yellow-200">
+                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+
                             <span class="ml-4">Lean Canvas</span>
                         </a>
                     </li>
 
                     <li class="flow-root">
-                        <a href="https://github.com/modenero/avagogo" target="_blank" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
-                            <!-- Heroicon name: outline/globe-alt -->
-                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                                />
-                            </svg>
+                        <a href="https://github.com/modenero/avagogo" target="_blank" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-yellow-200">
+                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+
                             <span class="ml-4">Source Code</span>
                         </a>
                     </li>
 
                     <li class="flow-root">
-                        <a href="https://github.com/modenero/contracts" target="_blank" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
-                            <!-- Heroicon name: outline/bookmark-alt -->
-                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
+                        <a href="https://github.com/modenero/contracts" target="_blank" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-yellow-200">
+                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
+
                             <span class="ml-4">Smart Contracts</span>
                         </a>
                     </li>
 
-                    <li class="flow-root">
-                        <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
-                            <!-- Heroicon name: outline/desktop-computer -->
-                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                            <span class="ml-4">Webinars</span>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </nav>
+
         <div class="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
             <div>
                 <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                    From the blog
+                    Featured Social Media
                 </h3>
+
                 <ul role="list" class="mt-6 space-y-6">
                     <li class="flow-root">
-                        <a href="javascript://" class="-m-3 p-3 flex rounded-lg hover:bg-gray-100">
+                        <a href="https://twitter.com/AvaGoGoDeFi/status/1489126584468582400?s=20&t=herAyOkbpm9D-UoppHPcQA" target="_blank" class="-m-3 p-3 flex rounded-lg hover:bg-gray-100">
                             <div class="hidden sm:block flex-shrink-0">
                                 <img
                                     class="w-32 h-20 object-cover rounded-md"
@@ -154,19 +97,21 @@
                                     alt=""
                                 />
                             </div>
+
                             <div class="w-0 flex-1 sm:ml-8">
                                 <h4 class="text-base font-medium text-gray-900 truncate">
-                                    Boost your conversion rate
+                                    Started recording short vid clips of our new mobile app already in TestFlight. Which looks better (mp4 version)?
                                 </h4>
+
                                 <p class="mt-1 text-sm text-gray-500">
-                                    Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.
+                                    #MoralisAvalancheHackathon @avalancheavax @MoralisWeb3 #web3 #dapp #defi #hackathon
                                 </p>
                             </div>
                         </a>
                     </li>
 
                     <li class="flow-root">
-                        <a href="javascript://" class="-m-3 p-3 flex rounded-lg hover:bg-gray-100">
+                        <a href="https://www.reddit.com/r/AvaGoGoDeFi/comments/sjbw52/team_ava_gogos_official_moralis_avalanche/" target="_blank" class="-m-3 p-3 flex rounded-lg hover:bg-gray-100">
                             <div class="hidden sm:block flex-shrink-0">
                                 <img
                                     class="w-32 h-20 object-cover rounded-md"
@@ -174,18 +119,23 @@
                                     alt=""
                                 />
                             </div>
+
                             <div class="w-0 flex-1 sm:ml-8">
                                 <h4 class="text-base font-medium text-gray-900 truncate">
-                                    How to use search engine optimization to drive traffic to your site
+                                    Team Ava GoGo's "Official" Moralis + Avalanche Hackathon Submission
                                 </h4>
+
                                 <p class="mt-1 text-sm text-gray-500">
-                                    Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.
+                                    ummm, so yeah, this turned out to be a "silent" film.
+                                    no idea why my Macbook mic didn't record the audio. i swear...
                                 </p>
                             </div>
                         </a>
                     </li>
+
                 </ul>
             </div>
+
             <div class="mt-6 text-sm font-medium">
                 <a href="javascript://" class="text-indigo-600 hover:text-indigo-500"> View all posts <span aria-hidden="true">&rarr;</span></a>
             </div>
@@ -197,6 +147,32 @@
 export default {
     props: {
         msg: String
-    }
+    },
+    methods: {
+        loadAlpha() {
+            this.$emit('close-all')
+
+            this.$router.push('/hackathon/alpha-finance-lab')
+        },
+
+        loadBENQI() {
+            this.$emit('close-all')
+
+            this.$router.push('/hackathon/benqi')
+        },
+
+        loadColony() {
+            this.$emit('close-all')
+
+            this.$router.push('/hackathon/colony')
+        },
+
+        loadYieldYak() {
+            this.$emit('close-all')
+
+            this.$router.push('/hackathon/yield-yak')
+        },
+
+    },
 }
 </script>

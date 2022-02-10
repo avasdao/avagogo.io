@@ -23,11 +23,12 @@
                         </svg>
                     </button>
                 </div>
+
                 <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
                     <nav class="flex space-x-10">
-                        <router-link to="/download" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a @click="download" href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">
                             Download
-                        </router-link>
+                        </a>
 
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
@@ -37,7 +38,7 @@
                                 class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 aria-expanded="false"
                             >
-                                <span>Hackathon</span>
+                                <span class="text-red-500">Hackathon</span>
                                 <!--
                     Heroicon name: solid/chevron-down
 
@@ -63,9 +64,9 @@
                             </div>
                         </div>
 
-                        <router-link to="/gogo" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a @click="gogo" href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">
                             $GOGO
-                        </router-link>
+                        </a>
 
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
@@ -298,6 +299,17 @@ export default {
             this.showMenu = false
             this.showHackathon = false
         },
+
+        download() {
+            this.closeAll()
+            this.$router.push('/download')
+        },
+
+        gogo() {
+            this.closeAll()
+            this.$router.push('/gogo')
+        },
+
         toggleExtras() {
             this.showMenu = false
             this.showHackathon = !this.showHackathon

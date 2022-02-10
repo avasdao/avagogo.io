@@ -45,23 +45,23 @@ const routes = [
     // HACKATHON SCREENS
     {
         path: '/hackathon',
-        component: () => import(/* webpackChunkName: "core" */ '../views/Hackathon.vue')
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/Hackathon.vue')
     },
     {
         path: '/hackathon/alpha-finance-lab',
-        component: () => import(/* webpackChunkName: "core" */ '../views/HackathonDetail.vue')
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {
         path: '/hackathon/benqi',
-        component: () => import(/* webpackChunkName: "core" */ '../views/hackathon/BENQI.vue')
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {
         path: '/hackathon/colony',
-        component: () => import(/* webpackChunkName: "core" */ '../views/hackathon/Colony.vue')
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {
         path: '/hackathon/yield-yak',
-        component: () => import(/* webpackChunkName: "core" */ '../views/hackathon/YieldYak.vue')
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
 
     // DEFI SCREENS
