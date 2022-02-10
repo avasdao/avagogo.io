@@ -13,7 +13,8 @@
                 <!-- Search section -->
                 <div class="flex-1 flex justify-center lg:justify-end">
                     <div class="w-full px-2 lg:px-6">
-                        <label for="search" class="sr-only">Search strategies</label>
+                        <label for="search" class="sr-only">Search all funds</label>
+
                         <div class="relative text-indigo-200 focus-within:text-gray-400">
                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                 <!-- Heroicon name: solid/search -->
@@ -21,16 +22,18 @@
                                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                                 </svg>
                             </div>
+
                             <input
                                 id="search"
                                 name="search"
                                 class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-indigo-400 bg-opacity-25 text-indigo-100 placeholder-indigo-200 focus:outline-none focus:bg-white focus:ring-0 focus:placeholder-gray-400 focus:text-gray-900 sm:text-sm"
-                                placeholder="Search strategies"
+                                placeholder="Search all funds"
                                 type="search"
                             />
                         </div>
                     </div>
                 </div>
+
                 <div class="flex lg:hidden">
                     <!-- Mobile menu button -->
                     <button
@@ -62,13 +65,14 @@
                         </svg>
                     </button>
                 </div>
+
                 <!-- Links section -->
                 <div class="hidden lg:block lg:w-80">
                     <div class="flex items-center justify-end">
                         <div class="flex">
-                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-200 hover:text-white" aria-current="page">Dashboard</a>
+                            <a href="javascript://" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-200 hover:text-white" aria-current="page">Dashboard</a>
 
-                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-200 hover:text-white">Domains</a>
+                            <a href="javascript://" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-200 hover:text-white">Domains</a>
                         </div>
                         <!-- Profile dropdown -->
                         <div class="ml-4 relative flex-shrink-0">
@@ -103,11 +107,11 @@
                                 tabindex="-1"
                             >
                                 <!-- Active: "bg-gray-100", Not Active: "" -->
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+                                <a href="javascript://" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
 
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+                                <a href="javascript://" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
 
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+                                <a href="javascript://" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
                             </div>
                         </div>
                     </div>
@@ -119,17 +123,18 @@
         <div class="hidden lg:hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <!-- Current: "text-white bg-indigo-800", Default: "text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600" -->
-                <a href="#" class="text-white bg-indigo-800 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+                <a href="javascript://" class="text-white bg-indigo-800 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
 
-                <a href="#" class="text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Domains</a>
+                <a href="javascript://" class="text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Domains</a>
             </div>
+
             <div class="pt-4 pb-3 border-t border-indigo-800">
                 <div class="px-2 space-y-1">
-                    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600">Your Profile</a>
+                    <a href="javascript://" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600">Your Profile</a>
 
-                    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600">Settings</a>
+                    <a href="javascript://" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600">Settings</a>
 
-                    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600">Sign out</a>
+                    <a href="javascript://" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600">Sign out</a>
                 </div>
             </div>
         </div>
@@ -138,8 +143,8 @@
 
 <script>
 export default {
-  props: {
-    msg: String
-  }
+    props: {
+        msg: String,
+    },
 }
 </script>

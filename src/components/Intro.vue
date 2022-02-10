@@ -23,7 +23,7 @@
                 <div class="mt-6 sm:max-w-xl">
                     <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
                         <span class="text-blue-500 text-5xl">DeFi Is HARD!</span>
-                        <span class="block text-gray-700">Copy Winning Strategies From TOP Traders</span>
+                        <span class="block text-gray-700">Copy Winning Strategies From TOP Fund Managers</span>
                     </h1>
 
                     <p class="mt-6 text-xl text-gray-500">
@@ -46,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="mt-2">
+                <a href="https://www.trustpilot.com/review/avagogo.io" target="_blank" class="block mt-2">
                     <div class="inline-flex items-center divide-x divide-gray-300">
                         <div class="flex-shrink-0 flex pr-5">
                             <!-- Heroicon name: solid/star -->
@@ -91,7 +91,7 @@
                             </span>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <div class="flex flex-col">
                     <div class="mt-5 py-2 px-5 bg-indigo-300 border-2 border-indigo-500 text-xl text-white font-bold rounded-lg">
