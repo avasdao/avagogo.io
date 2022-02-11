@@ -34,6 +34,13 @@
                                         {{tvlDisplay(manager.tvl)}}
                                     </span>
                                 </div>
+
+                                <div class="text-sm">
+                                    Subscription Fee:
+                                    <span class="text-red-500 font-medium">
+                                        {{manager.subFee}} $GOGO / LOT
+                                    </span>
+                                </div>
                             </div>
 
                         </div>
@@ -65,7 +72,7 @@ export default {
         tvlDisplay(_tvl) {
             return numeral(_tvl).format('$0.00a')
         },
-        
+
     },
     created: function () {
         /* Initialize managers. */
@@ -76,6 +83,7 @@ export default {
             title: 'Colony Accelerator (@colony)',
             summary: `Top 10 Avalanche projects by market cap.`,
             avatar: 'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+            subFee: 100,
             numFollowers: 100,
             followers: [{
 
@@ -89,6 +97,7 @@ export default {
             title: 'Shomari (@nyusternie)',
             summary: `Deployed Workcation (2d89f0c8 in master) to production`,
             avatar: 'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+            subFee: 15,
             numFollowers: 20,
             tvl: 1337000,
             createdAt: 1234567890,

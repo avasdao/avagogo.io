@@ -12,6 +12,7 @@
                 <rect width="404" height="392" fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)" />
             </svg>
         </div>
+
         <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
             <div class="relative rounded-2xl px-6 py-10 bg-rose-500 overflow-hidden shadow-xl sm:px-12 sm:py-20">
                 <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
@@ -20,15 +21,18 @@
                         <path class="text-rose-600 text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
                     </svg>
                 </div>
+
                 <div class="relative">
                     <div class="sm:text-center">
                         <h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-                            Get notified when we&rsquo;re launching.
+                            Use <router-link to="/gogo">$GOGO</router-link> to subscribe your favorite assets TODAY!
                         </h2>
+
                         <p class="mt-6 mx-auto max-w-2xl text-lg text-rose-100">
-                            Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque.
+                            The world's TOP DeFi Fund Managers are ready to show you the way.
                         </p>
                     </div>
+
                     <div class="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
                         <div class="min-w-0 flex-1">
                             <label for="cta-email" class="sr-only">Email address</label>

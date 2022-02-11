@@ -1,14 +1,16 @@
 <template>
     <header v-if="showHeader" class="relative bg-white">
         <div class="absolute inset-0 shadow z-30 pointer-events-none" aria-hidden="true"></div>
+
         <div class="relative z-20">
             <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
                 <div>
-                    <a href="javascript://" class="flex">
+                    <router-link to="/" class="flex">
                         <span class="sr-only">Ava Nakamoto</span>
                         <img class="h-10 w-auto sm:h-16" :src="require('../assets/logo.png')" alt="Ava Nakamoto" />
-                    </a>
+                    </router-link>
                 </div>
+
                 <div class="-mr-2 -my-2 md:hidden">
                     <button
                         @click="showMobileMenu = !showMobileMenu"

@@ -27,7 +27,7 @@
 
             <Mission />
 
-            <Launch />
+            <Recruit />
         </main>
     </div>
 </template>
@@ -36,13 +36,13 @@
 /* Import components. */
 import Intro from '@/components/Intro'
 import Mission from '@/components/Mission'
-import Launch from '@/components/Launch'
+import Recruit from '@/components/Recruit'
 
 export default {
     components: {
         Intro,
         Mission,
-        Launch,
+        Recruit,
     },
     methods: {
         openApp() {
