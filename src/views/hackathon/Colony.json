@@ -1,8 +1,11 @@
 {
     "name": "Colony",
-    "challengeTitle": "Best Colony",
-    "challengeDesc": "Compete in this biggest Web3 Hackathon and win $30,000 for the best product(s) built on-top of existing Alpha Finance Lab’s products (Alpha Homora, AlphaX, and Alpha Tokenomics).",
-    "source": "https://blog.alphafinance.io/build-the-future-with-alpha-finance-lab",
-    "benefit1": "Our beautiful NEW native mobile UI/UX, for trading anywhere at anytime.",
-    "benefit2": "A community of trading experts TRUSTLESSLY manage their Alpha Finance portfolios."
+    "challengeTitle": "The First Index on Avalanche",
+    "challengeDesc": "An Index is a great tool to get exposure to different assets/coins and that is why Colony would like to create an index with the top 10 Market Cap projects inside the Avalanche ecosystem.",
+    "source": "https://medium.com/colony-lab/colony-joins-moralis-avalanche-hackathon-to-support-the-next-wave-of-web3-developers-6d2ff54e6238",
+    "benefitIntro": "Our team has compiled & built an index of the TOP Avalanche projects.",
+    "benefit1": "Both new and experienced users can easily invest in these projects",
+    "benefit2": "Colony can manage the subscription rate.",
+    "benefit3": "",
+    "benefitClose": "Our team is looking to create more indexes in the near future."
 }

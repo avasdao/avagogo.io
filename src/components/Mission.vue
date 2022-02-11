@@ -67,8 +67,9 @@
                         </p>
 
                         <p class="text-base leading-7">
-                            The average Ethereum DeFi app has a annual yield of under 10%.
+                            The average Ethereum platforms now top out at 8% APY.
                             However, the TOP DeFi Fund Managers are earning an average of 40% or more.
+                            Watch how they navigate various pooling and farming opportunites for incredible gains.
                         </p>
 
                         <p class="text-base leading-7">

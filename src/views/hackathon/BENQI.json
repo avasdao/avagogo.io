@@ -1,8 +1,11 @@
 {
     "name": "BENQI",
     "challengeTitle": "Best BENQI dApp",
-    "challengeDesc": "Compete in this biggest Web3 Hackathon and win $30,000 for the best product(s) built on-top of existing Alpha Finance Lab’s products (Alpha Homora, AlphaX, and Alpha Tokenomics).",
-    "source": "https://blog.alphafinance.io/build-the-future-with-alpha-finance-lab",
-    "benefit1": "Our beautiful NEW native mobile UI/UX, for trading anywhere at anytime.",
-    "benefit2": "A community of trading experts TRUSTLESSLY manage their Alpha Finance portfolios."
+    "challengeDesc": "Compete in this biggest Web3 Hackathon and win $40,000 for the best product(s) built on-top of existing BENQI solutions.",
+    "source": "https://moralis.io/avalanche-hackathon/",
+    "benefitIntro": "Our team has integrated the primary functions of BENQI into our Dashboards area.",
+    "benefit1": "BENQI users will enjoy an optimal experience on mobile.",
+    "benefit2": "Receive instant notifications of key account & platform events.",
+    "benefit3": "Introduce new users to the BENQI platform.",
+    "benefitClose": "We will continue to research & explore new and better ways of integrating with BENQI."
 }

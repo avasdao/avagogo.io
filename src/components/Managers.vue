@@ -38,7 +38,7 @@
                                 <div class="text-sm">
                                     Subscription Fee:
                                     <span class="text-red-500 font-medium">
-                                        {{manager.subFee}} $GOGO / LOT
+                                        1 $GOGO <small>per {{feeDisplay(manager.subFee)}}</small>
                                     </span>
                                 </div>
                             </div>
@@ -73,6 +73,10 @@ export default {
             return numeral(_tvl).format('$0.00a')
         },
 
+        feeDisplay(_fee) {
+            return numeral(_fee).format('$0[.]0[0]a')
+        },
+
     },
     created: function () {
         /* Initialize managers. */
@@ -97,7 +101,7 @@ export default {
             title: 'Shomari (@nyusternie)',
             summary: `Deployed Workcation (2d89f0c8 in master) to production`,
             avatar: 'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
-            subFee: 15,
+            subFee: 1337,
             numFollowers: 20,
             tvl: 1337000,
             createdAt: 1234567890,

@@ -1,8 +1,11 @@
 {
     "name": "Yield Yak",
-    "challengeTitle": "Best Yield Yak",
-    "challengeDesc": "Compete in this biggest Web3 Hackathon and win $30,000 for the best product(s) built on-top of existing Alpha Finance Lab’s products (Alpha Homora, AlphaX, and Alpha Tokenomics).",
-    "source": "https://blog.alphafinance.io/build-the-future-with-alpha-finance-lab",
+    "challengeTitle": "Best Yield Yak Front-End Integration",
+    "challengeDesc": "Yield Yak supports dozens of platforms for auto-compounding, and has also developed single-asset lending optimisation strategies, where single-assets were ‘folded’ multiple times in order to maximize yield on lending platforms such as Benqi, AAVE, and Trader Joe.",
+    "source": "https://yieldyak.medium.com/yield-yak-joins-moralis-avalanche-hackathon-as-partner-27639e4db30b",
+    "benefitIntro": "Our team has fully integrated Yield Yak into our platform.",
     "benefit1": "Our beautiful NEW native mobile UI/UX, for trading anywhere at anytime.",
-    "benefit2": "A community of trading experts TRUSTLESSLY manage their Alpha Finance portfolios."
+    "benefit2": "Experienced traders have new and better tools.",
+    "benefit3": "Execute against our AI API.",
+    "benefitClose": "Our team is looking for more integrations."
 }

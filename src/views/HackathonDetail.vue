@@ -35,7 +35,7 @@
             <div class="text-lg max-w-prose mx-auto">
                 <h1>
                     <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
-                        {{sponsor ? sponsor.name : ''}} Sponsor Details
+                        {{sponsor ? sponsor.name : ''}}'s Sponsor Details
                     </span>
 
                     <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -54,7 +54,7 @@
 
             <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
                 <p>
-                    Our team has integrated the Alpha Finance Lab suite of products into the application section of our mobile app.
+                    {{sponsor.benefitIntro}}
                 </p>
 
                 <p>
@@ -64,12 +64,34 @@
                 <ul role="list">
                     <li>{{sponsor ? sponsor.benefit1 : ''}}</li>
                     <li>{{sponsor ? sponsor.benefit2 : ''}}</li>
-                    <li>Our built-in notification system will BOOST product engagement.</li>
+                    <li>{{sponsor ? sponsor.benefit3 : ''}}</li>
                 </ul>
 
                 <p>
-                    Quis semper vulputate aliquam venenatis egestas sagittis quisque orci. Donec commodo sit viverra aliquam porttitor ultrices gravida eu. Tincidunt leo, elementum mattis elementum ut nisl, justo, amet, mattis. Nunc purus, diam
-                    commodo tincidunt turpis. Amet, duis sed elit interdum dignissim.
+                    {{sponsor.benefitClose}}
+                </p>
+
+                <p class="text-3xl text-indigo-700 font-medium text-center">
+                    Imagine What The Future Holds For
+                    <br />Ava GoGo + {{sponsor ? sponsor.name : ''}}
+                </p>
+
+                <div class="mx-auto space-y-2 lg:space-y-0 lg:gap-4 lg:grid lg:grid-cols-3">
+                    <a href="javascript://" class="w-full hover:opacity-60">
+                        <img :src="require('../assets/screenshots/boards-list.png')" class="rounded-xl border-4 border-gray-300 hover:border-yellow-500" />
+                    </a>
+
+                    <a href="javascript://" class="w-full hover:opacity-60">
+                        <img :src="require('../assets/screenshots/alpha-start.png')" class="rounded-xl border-4 border-gray-300 hover:border-yellow-500" />
+                    </a>
+
+                    <a href="javascript://" class="w-full hover:opacity-60">
+                        <img :src="require('../assets/screenshots/early-preview.png')" class="rounded-xl border-4 border-gray-300 hover:border-yellow-500" />
+                    </a>
+                </div>
+
+                <p>
+                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.
                 </p>
 
                 <h2>From beginner to expert in 30 days</h2>
@@ -100,17 +122,13 @@
                 </button>
 
                 <h2>
-                    Everything you need to get up and running
+                    Our plans for the next 6-months..
                 </h2>
 
                 <p>
-                    Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie.
-                    Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.
+                    {{sponsor.future ? sponsor.future : 'no plans yet..'}}
                 </p>
 
-                <p>
-                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.
-                </p>
             </div>
         </div>
     </div>
