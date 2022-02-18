@@ -38,7 +38,7 @@
                                 <div class="text-sm">
                                     Subscription Fee:
                                     <span class="text-red-500 font-medium">
-                                        1 $GOGO <small>per {{feeDisplay(manager.subFee)}}</small>
+                                        1 $GOGO <small>per {{feeDisplay(manager)}}</small>
                                     </span>
                                 </div>
                             </div>
@@ -73,8 +73,10 @@ export default {
             return numeral(_tvl).format('$0.00a')
         },
 
-        feeDisplay(_fee) {
-            return numeral(_fee).format('$0[.]0[0]a')
+        feeDisplay(_manager) {
+            console.log('MANAGER', _manager)
+            // return numeral(_fee).format('$0[.]0[0]a')
+            return `1.2 ${_manager.currency}`
         },
 
     },
@@ -88,6 +90,7 @@ export default {
             summary: `Top 10 Avalanche projects by market cap.`,
             avatar: 'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
             subFee: 100,
+            currency: 'WAVAX',
             numFollowers: 100,
             followers: [{
 
@@ -102,6 +105,31 @@ export default {
             summary: `Deployed Workcation (2d89f0c8 in master) to production`,
             avatar: 'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
             subFee: 1337,
+            currency: 'WAVAX',
+            numFollowers: 20,
+            tvl: 1337000,
+            createdAt: 1234567890,
+        })
+
+        this.managers.push({
+            id: '333',
+            title: 'Satoshi Nakamoto (@satoshi)',
+            summary: `Deployed Workcation (2d89f0c8 in master) to production`,
+            avatar: 'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+            subFee: 1337,
+            currency: 'WAVAX',
+            numFollowers: 20,
+            tvl: 1337000,
+            createdAt: 1234567890,
+        })
+
+        this.managers.push({
+            id: '44',
+            title: 'Vatalik Buterin (@vitaly)',
+            summary: `Deployed Workcation (2d89f0c8 in master) to production`,
+            avatar: 'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+            subFee: 1337,
+            currency: 'MATIC',
             numFollowers: 20,
             tvl: 1337000,
             createdAt: 1234567890,

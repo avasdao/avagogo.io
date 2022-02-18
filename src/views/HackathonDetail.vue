@@ -73,7 +73,7 @@
 
                 <p class="text-3xl text-indigo-700 font-medium text-center">
                     Imagine What The Future Holds For
-                    <br />Ava GoGo + {{sponsor ? sponsor.name : ''}}
+                    <br class="hidden sm:block" />Ava GoGo + {{sponsor ? sponsor.name : ''}}
                 </p>
 
                 <div class="mx-auto space-y-2 lg:space-y-0 lg:gap-4 lg:grid lg:grid-cols-3">
@@ -82,7 +82,7 @@
                     </a>
 
                     <a href="javascript://" class="w-full hover:opacity-60">
-                        <img :src="require('../assets/screenshots/alpha-start.png')" class="rounded-xl border-4 border-gray-300 hover:border-yellow-500" />
+                        <img :src="sponsorScreen" class="rounded-xl border-4 border-gray-300 hover:border-yellow-500" />
                     </a>
 
                     <a href="javascript://" class="w-full hover:opacity-60">
@@ -91,35 +91,47 @@
                 </div>
 
                 <p>
-                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.
+                    Nothing is better than seeing it with you own eyes.
+                    Please take a moment and watch this LIVE simulation of how the team at Ava GoGo have <strong>integrated our desktop and mobile dApps with {{sponsor ? sponsor.name : ''}}.</strong>
                 </p>
 
-                <h2>From beginner to expert in 30 days</h2>
-
-                <p>
-                    Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris,
-                    ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.
-                </p>
-
-                <blockquote>
-                    <p>Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
-                </blockquote>
-
-                <p>
-                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.
-                </p>
-
-                <button type="button" class="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <a href="/media/ava-gogo-first-promo-video.mp4" target="_blank" class="flex flex-col items-center relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 no-underline">
                     <span class="sr-only">Watch our video to learn more</span>
-                    <img class="w-full rounded-xl" src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" />
+
+                    <img class="w-full lg:w-48 rounded-xl" src="/media/ava-gogo-first-promo-thumb.png" alt="Ava Gogo Promo Video" />
+
+                    <!-- play button -->
                     <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
                         <svg class="h-20 w-20 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
                             <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
                             <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
                         </svg>
                     </div>
-                    <figcaption>Sagittis scelerisque nulla cursus in enim consectetur quam.</figcaption>
-                </button>
+
+                    <span class="no-underline">
+                        Watch a LIVE demo of <strong>Ava GoGo + {{sponsor ? sponsor.name : ''}}</strong> at work!
+                    </span>
+                </a>
+
+                <h2>A Word From Our Sponsors</h2>
+
+                <p>
+                    We've been actively reaching out to our sponsors via social media (Twitter, Discord &amp; Telegram).
+                    This is what they've had to say..
+                </p>
+
+                <blockquote>
+                    <p>
+                        Sagittis scelerisque nulla cursus in enim consectetur quam.
+                        Dictum urna sed consectetur neque tristique pellentesque.
+                        Blandit amet, sed aenean erat arcu morbi.
+                    </p>
+                </blockquote>
+
+                <p>
+                    We have the utmost respect for the knowledge and experience of these sponsors.
+                    It's our hope that we can build strong relationships with the sponsors long after the hackathon ends.
+                </p>
 
                 <h2>
                     Our plans for the next 6-months..
@@ -142,6 +154,7 @@ export default {
     data: () => {
         return {
             sponsor: null,
+            featuredScreens: null,
         }
     },
     watch: {
@@ -151,18 +164,36 @@ export default {
             switch(to.path) {
             case '/hackathon/alpha-finance-lab':
                 this.sponsor = require('./hackathon/Alpha.json')
+                this.featured = 'alpha'
                 break
             case '/hackathon/benqi':
                 this.sponsor = require('./hackathon/BENQI.json')
+                this.featured = 'benqi'
                 break
             case '/hackathon/colony':
                 this.sponsor = require('./hackathon/Colony.json')
+                this.featured = 'colony'
+                break
+            case '/hackathon/trader-joe':
+                this.sponsor = require('./hackathon/TraderJoe.json')
+                this.featured = 'trader-joe'
                 break
             case '/hackathon/yield-yak':
                 this.sponsor = require('./hackathon/YieldYak.json')
+                this.featured = 'yield-yak'
                 break
             }
         }
+    },
+    computed: {
+        sponsorScreen() {
+            if (this.featured === 'trader-joe') {
+                return require('../assets/screenshots/trader-joe-start.png')
+            } else {
+                return require('../assets/screenshots/alpha-start.png')
+            }
+        },
+
     },
     methods: {
         //
@@ -177,15 +208,23 @@ export default {
         switch(path) {
         case '/hackathon/alpha-finance-lab':
             this.sponsor = require('./hackathon/Alpha.json')
+            this.featured = 'alpha'
             break
         case '/hackathon/benqi':
             this.sponsor = require('./hackathon/BENQI.json')
+            this.featured = 'benqi'
             break
         case '/hackathon/colony':
             this.sponsor = require('./hackathon/Colony.json')
+            this.featured = 'colony'
+            break
+        case '/hackathon/trader-joe':
+            this.sponsor = require('./hackathon/TraderJoe.json')
+            this.featured = 'trader-joe'
             break
         case '/hackathon/yield-yak':
             this.sponsor = require('./hackathon/YieldYak.json')
+            this.featured = 'yield-yak'
             break
         }
     },

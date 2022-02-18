@@ -1,0 +1,11 @@
+{
+    "name": "Trader Joe",
+    "challengeTitle": "Revamp Analytics Dashboard + Portfolio Tracker for Trader Joe DEX & Lending",
+    "challengeDesc": "Trader Joe is looking for a portfolio tracker with a brilliant user experience. This tracker should track users’ positions in pools, farms, and money markets.",
+    "source": "https://traderjoe-xyz.medium.com/trader-joe-joins-the-moralis-avalanche-hackathon-ac361ef87d82",
+    "benefitIntro": "Our team has fully integrated Trader Joe into our platform.",
+    "benefit1": "Our beautiful NEW native mobile UI/UX, for trading anywhere at anytime.",
+    "benefit2": "Introduce an Avlanache Push Notification System (APNS.io) for greater mobile user engagement.",
+    "benefit3": "Experienced traders have new and better tools.",
+    "benefitClose": "Our team is looking for more integrations."
+}

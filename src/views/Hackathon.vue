@@ -68,7 +68,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                        <a href="/media/ava-gogo-first-promo-video.mp4" target="_blank" class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
                             <svg class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 scale-75 origin-top sm:scale-100 lg:hidden" width="640" height="784" fill="none" viewBox="0 0 640 784" aria-hidden="true">
                                 <defs>
                                     <pattern id="4f4f415c-a0e9-44c2-9601-6ded5a34a13e" x="118" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -79,10 +79,10 @@
                                 <rect x="118" width="404" height="784" fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
                             </svg>
 
-                            <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-                                <button type="button" class="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            <div class="flex flex-col items-center relative mx-auto w-full lg:w-48 rounded-lg shadow-lg lg:max-w-md">
+                                <button type="button" class="flex flex-col items-center relative w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                     <span class="sr-only">Watch our video to learn more</span>
-                                    <img class="w-full" src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" />
+                                    <img class="w-full lg:w-48" src="/media/ava-gogo-first-promo-thumb.png" alt="" />
                                     <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
                                         <svg class="h-20 w-20 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
                                             <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
@@ -91,7 +91,7 @@
                                     </div>
                                 </button>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </main>
             </div>
@@ -114,7 +114,7 @@
                                     Best Alpha Finance Lab dApp
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500">
+                            <p class="mt-2 text-sm text-gray-500 hidden">
                                 Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
                             </p>
                         </div>
@@ -137,7 +137,7 @@
                                     Best BENQI dApp
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500">
+                            <p class="mt-2 text-sm text-gray-500 hidden">
                                 Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
                             </p>
                         </div>
@@ -151,17 +151,17 @@
                     </div>
 
                     <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-16" src="https://i.imgur.com/TRh2svH.png" />
+                        <img class="h-16" src="https://i.imgur.com/KGwVWUC.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/hackathon/colony" class="focus:outline-none">
+                                <router-link to="/hackathon/trader-joe" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
-                                    The First Index on Avalanche
+                                    Revamp Analytics Dashboard + Portfolio Tracker for Trader Joe DEX & Lending
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500">
-                                Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                            <p class="mt-2 text-sm text-gray-500 hidden">
+                                Trader Joe is looking for a portfolio tracker with a brilliant user experience. This tracker should track users’ positions in pools, farms, and money markets.
                             </p>
                         </div>
                         <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -184,7 +184,7 @@
                                     <br />+ Use of Interest-Bearing Assets
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500">
+                            <p class="mt-2 text-sm text-gray-500 hidden">
                                 Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
                             </p>
                         </div>
@@ -196,6 +196,30 @@
                             </svg>
                         </span>
                     </div>
+
+                    <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                        <img class="h-16" src="https://i.imgur.com/TRh2svH.png" />
+                        <div class="mt-8">
+                            <h3 class="text-lg font-medium">
+                                <router-link to="/hackathon/colony" class="focus:outline-none">
+                                    <!-- Extend touch target to entire panel -->
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    The First Index on Avalanche
+                                </router-link>
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-500 hidden">
+                                Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                            </p>
+                        </div>
+                        <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"
+                                />
+                            </svg>
+                        </span>
+                    </div>
+
                 </div>
             </section>
         </div>

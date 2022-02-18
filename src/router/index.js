@@ -60,6 +60,10 @@ const routes = [
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {
+        path: '/hackathon/trader-joe',
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+    },
+    {
         path: '/hackathon/yield-yak',
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
