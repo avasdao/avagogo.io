@@ -28,9 +28,6 @@
 </template>
 
 <script>
-/* Import modules. */
-import { inject } from 'vue'
-
 /* Import components. */
 import Navbar from '@/components/Navbar.vue'
 import Funds from '@/components/Funds.vue'
@@ -82,67 +79,13 @@ export default {
         },
     },
     methods: {
-        /**
-         * Set User
-         */
-        setUser(_user) {
-            /* Set user. */
-            this.$store.commit('setUser', _user)
-        },
-
-        /**
-         * Login
-         */
-        async login () {
-            // const user = await this.$moralis.Web3.authenticate()
-            const user = await this.$moralis.Web3
-                .authenticate({ signingMessage: 'Welcome to Ava GoGo. Please authenticate your account -- ' })
-                .catch(err => {
-                    console.error(err)
-
-                    if (err && err.code && err.code === 4100) {
-                        alert('Please sign-in to your Web3 wallet to continue.')
-                    } else if (err && err.message) {
-                        alert(err.message)
-                    }
-                })
-
-            /* Save user. */
-            this.setUser(user)
-        },
-
-        /**
-         * Logout
-         */
-        async logout() {
-            await this.$moralis.User.logOut()
-                .catch(err => {
-                    console.error(err)
-                })
-            this.setUser({})
-        },
-
-        /**
-         * Handle Current User
-         */
-        handleCurrentUser() {
-            const user = this.$moralis.User.current()
-            // console.log('MORALIS USER', user)
-
-            if (user) {
-                this.setUser(user)
-            }
-        },
-
+        //
     },
     created: function () {
-        // const store = useStore()
-        this.$moralis = inject('$moralis')
-
+        //
     },
     mounted: function () {
-        /* Handle current user. */
-        this.handleCurrentUser()
+        //
     },
 }
 </script>

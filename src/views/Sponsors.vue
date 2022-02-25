@@ -23,21 +23,37 @@
                                 Hackathon Sponsors Address
                             </h3>
 
-                            <p v-if="activeCurrency === 'BTC'" class="mt-6 text-3xl font-bold text-yellow-500">
-                                BITCOIN
-                                <a href="https://blockchair.com/bitcoin/address/31zq7GhbTRFDaLhpyMHMAgrjP8w5c94xA8" target="_blank" class="hidden lg:block text-red-500 text-2xl">31zq7GhbTRFDaLhpyMHMAgrjP8w5c94xA8</a>
-                                <a href="https://blockchair.com/bitcoin/address/31zq7GhbTRFDaLhpyMHMAgrjP8w5c94xA8" target="_blank" class="block lg:hidden text-red-500 text-2xl">31zq7GhbTR...P8w5c94xA8</a>
+                            <p v-if="activeAccount === 'AVAX'" class="mt-6 text-3xl font-bold text-pink-500">
+                                AVALANCHE
+                                <a href="https://snowtrace.io/address/0xdc1c3eb7ad2a1abf0cbb1b115b67ddd4cfae5b66" target="_blank" class="hidden lg:block text-pink-500 text-2xl">0xDC1C3Eb7AD2a1ABF0CBb1B115B67ddd4cfAe5B66</a>
+                                <a href="https://snowtrace.io/address/0xdc1c3eb7ad2a1abf0cbb1b115b67ddd4cfae5b66" target="_blank" class="block lg:hidden text-pink-500 text-2xl">0xDC1C3Eb7...cfAe5B66</a>
                             </p>
 
-                            <p v-if="activeCurrency === 'AVAX'" class="mt-6 text-3xl font-bold text-purple-500">
-                                AVALANCHE
-                                <a href="https://explorer.avax.network/address/X-avax16jfzu7p574fwytqct2xle5zvjxvnwa9tp6ak5n" target="_blank" class="hidden lg:block text-red-500 text-2xl">X-avax16jfzu7p574fwytqct2xle5zvjxvnwa9tp6ak5n</a>
-                                <a href="https://explorer.avax.network/address/X-avax16jfzu7p574fwytqct2xle5zvjxvnwa9tp6ak5n" target="_blank" class="block lg:hidden text-red-500 text-2xl">X-avax16jf...wa9tp6ak5n</a>
+                            <p v-if="activeAccount === 'BSC'" class="mt-6 text-3xl font-bold text-yellow-500">
+                                BINANCE SMART CHAIN
+                                <a href="https://www.bscscan.com/address/0xDC1C3Eb7AD2a1ABF0CBb1B115B67ddd4cfAe5B66" target="_blank" class="hidden lg:block text-yellow-500 text-2xl">0xDC1C3Eb7AD2a1ABF0CBb1B115B67ddd4cfAe5B66</a>
+                                <a href="https://www.bscscan.com/address/0xDC1C3Eb7AD2a1ABF0CBb1B115B67ddd4cfAe5B66" target="_blank" class="block lg:hidden text-yellow-500 text-2xl">0xDC1C3Eb7...cfAe5B66</a>
                             </p>
+
+                            <p v-if="activeAccount === 'MATIC'" class="mt-6 text-3xl font-bold text-purple-500">
+                                POLYGON
+                                <a href="https://polygonscan.com/address/0xDC1C3Eb7AD2a1ABF0CBb1B115B67ddd4cfAe5B66" target="_blank" class="hidden lg:block text-purple-500 text-2xl">0xDC1C3Eb7AD2a1ABF0CBb1B115B67ddd4cfAe5B66</a>
+                                <a href="https://polygonscan.com/address/0xDC1C3Eb7AD2a1ABF0CBb1B115B67ddd4cfAe5B66" target="_blank" class="block lg:hidden text-purple-500 text-2xl">0xDC1C3Eb7...cfAe5B66</a>
+                            </p>
+
+                            <small class="mt-3 block font-medium">
+                                PLEASE NOTE:
+                            </small>
+                            <small class="block font-light text-xs">
+                                All of the above (network) addresses are identical.
+                            </small>
+                            <small class="block font-light text-xs">
+                                Toggle clickable links to open their respective block explorers.
+                            </small>
 
                             <div class="mt-8">
                                 <div class="flex items-center">
-                                    <h4 class="flex-shrink-0 pr-4 bg-white text-sm tracking-wider font-semibold uppercase text-indigo-600">
+                                    <h4 class="flex-shrink-0 pr-4 bg-white text-sm tracking-wider font-semibold uppercase text-red-600">
                                         Why Should You Sponsor Our Team?
                                     </h4>
                                     <div class="flex-1 border-t-2 border-gray-200"></div>
@@ -94,16 +110,17 @@
                                 </ul>
                             </div>
 
-                            <button @click="toggleBtcAvax" class="mt-5 p-3 bg-blue-500 border-4 border-blue-700 rounded-xl text-xl text-gray-50 font-medium">
-                                Toggle Bitcoin / Avalanche
+                            <button @click="toggleAccounts" class="mt-5 p-3 bg-blue-500 border-4 border-blue-700 rounded-xl text-xl text-gray-50 font-medium">
+                                Toggle Avalanche / Binance / Polygon
                             </button>
 
                         </div>
 
                         <div class="py-8 px-6 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
 
-                            <img v-if="activeCurrency === 'BTC'" class="h-72" :src="require('../assets/qrcode-btc.png')" />
-                            <img v-if="activeCurrency === 'AVAX'" class="h-72" :src="require('../assets/qrcode-avax.png')" />
+                            <img v-if="activeAccount === 'AVAX'" class="h-72 border-4 border-pink-500 rounded-xl" :src="require('../assets/qrcode-avax.png')" />
+                            <img v-if="activeAccount === 'BSC'" class="h-72 border-4 border-yellow-500 rounded-xl" :src="require('../assets/qrcode-bsc.png')" />
+                            <img v-if="activeAccount === 'MATIC'" class="h-72 border-4 border-purple-500 rounded-xl" :src="require('../assets/qrcode-matic.png')" />
 
                         </div>
 
@@ -122,20 +139,24 @@ export default {
     },
     data: () => {
         return {
-            activeCurrency: null,
+            activeAccount: null,
         }
     },
     methods: {
-        toggleBtcAvax() {
-            if (this.activeCurrency === 'BTC') {
-                this.activeCurrency = 'AVAX'
+        toggleAccounts() {
+            if (this.activeAccount === 'AVAX') {
+                this.activeAccount = 'BSC'
+            } else if (this.activeAccount === 'BSC') {
+                this.activeAccount = 'MATIC'
             } else {
-                this.activeCurrency = 'BTC'
+                this.activeAccount = 'AVAX'
             }
+
+            console.log('Account', this.activeAccount)
         },
     },
     created: function () {
-        this.activeCurrency = 'BTC'
+        this.activeAccount = 'AVAX'
     },
 }
 </script>
