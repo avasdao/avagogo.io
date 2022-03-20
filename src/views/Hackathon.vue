@@ -186,20 +186,20 @@
                     </div>
 
                     <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-24" src="https://i.imgur.com/KGwVWUC.png" />
+                        <img class="h-24" src="https://i.imgur.com/SUFpqfa.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/hackathon/trader-joe" class="focus:outline-none">
+                                <router-link to="/hackathon/ceramic" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
                                         <span class="text-lg text-indigo-300 font-bold">#4</span> Ceramic
                                     </h1>
-                                    Revamp Analytics Dashboard + Portfolio Tracker for Trader Joe DEX & Lending
+                                    Build a Self-sovereign, Encrypted, Decentralized Data Hub
                                 </router-link>
                             </h3>
                             <p class="mt-2 text-base text-gray-500">
-                                Trader Joe is looking for a portfolio tracker with a brilliant user experience. This tracker should track users’ positions in pools, farms, and money markets.
+                                This project is focused on building a private and decentralized data storage alternative that solves core structural issues with Web2 – specifically that Web2 platforms (e.g. Facebook) can own and gather user data that powers their 'surveillance capitalism’. With new, cutting-edge Web3 technologies... we can do better.
                             </p>
                         </div>
                         <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -212,20 +212,24 @@
                     </div>
 
                     <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-24" src="https://i.imgur.com/TRh2svH.png" />
+                        <img class="h-24" src="https://i.imgur.com/vk8gv7Q.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/hackathon/colony" class="focus:outline-none">
+                                <router-link to="/hackathon/harmony" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
                                         <span class="text-lg text-indigo-300 font-bold">#5</span> Harmony
                                     </h1>
-                                    The First Index on Avalanche
+                                    Unique Usages for Non-fungible Tokens
                                 </router-link>
                             </h3>
                             <p class="mt-2 text-base text-gray-500">
-                                Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                                We are all familiar with how NFTs can prove ownership and have been used to show membership in a club or ownership of a digital image.
+
+                                But that is not all.
+
+                                What ELSE can an NFT do? How can you use NFTs in a metaverse? What other rights can be imbedded into an NFT? Can you solve joint ownership of an NFT? An NFT timeshare?
                             </p>
                         </div>
                         <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -238,20 +242,20 @@
                     </div>
 
                     <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-24" src="https://i.imgur.com/KGwVWUC.png" />
+                        <img class="h-24" src="https://i.imgur.com/nuaKghb.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/hackathon/trader-joe" class="focus:outline-none">
+                                <router-link to="/hackathon/lit" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
                                         <span class="text-lg text-indigo-300 font-bold">#6</span> Lit Protocol
                                     </h1>
-                                    Revamp Analytics Dashboard + Portfolio Tracker for Trader Joe DEX & Lending
+                                    Hub - A Data Self-sovereignty Implementation and SDK
                                 </router-link>
                             </h3>
                             <p class="mt-2 text-base text-gray-500">
-                                Trader Joe is looking for a portfolio tracker with a brilliant user experience. This tracker should track users’ positions in pools, farms, and money markets.
+                                For this bounty, use Lit Protocol and Ceramic Network to create a novel consent and data sharing system for individual users and the applications they use.
                             </p>
                         </div>
                         <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -264,20 +268,20 @@
                     </div>
 
                     <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-24" src="https://i.imgur.com/TRh2svH.png" />
+                        <img class="h-24" src="https://i.imgur.com/FidAkQp.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/hackathon/colony" class="focus:outline-none">
+                                <router-link to="/hackathon/livepeer" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
                                         <span class="text-lg text-indigo-300 font-bold">#7</span> Livepeer Inc.
                                     </h1>
-                                    The First Index on Avalanche
+                                    Best Creator, Gaming or Metaverse App
                                 </router-link>
                             </h3>
                             <p class="mt-2 text-base text-gray-500">
-                                Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                                Technicality, originality, practicality and WOW factor.
                             </p>
                         </div>
                         <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">

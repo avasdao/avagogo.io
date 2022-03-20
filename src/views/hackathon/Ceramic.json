@@ -1,0 +1,11 @@
+{
+    "name": "Ceramic",
+    "challengeTitle": "Build a Self-sovereign, Encrypted, Decentralized Data Hub",
+    "challengeDesc": "This project is focused on building a private and decentralized data storage alternative that solves core structural issues with Web2 – specifically that Web2 platforms (e.g. Facebook) can own and gather user data that powers their 'surveillance capitalism’. With new, cutting-edge Web3 technologies... we can do better.",
+    "source": "https://www.ethdenver.com/bounties/ceramic",
+    "benefitIntro": "Our team has fully integrated Yield Yak into our platform.",
+    "benefit1": "Writing profile data to a user's 'hub' which is comprised of collections of data streams, made available on the Ceramic network",
+    "benefit2": "Granting/revoking third-party applications (via their wallet address) the right to decrypt this data using Lit",
+    "benefit3": "Enabling users to use their Hub as their ‘node’ in distributed social graph for encrypted social networking",
+    "benefitClose": "We will continue to research & explore new and better ways of integrating with Aave."
+}

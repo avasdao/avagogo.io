@@ -56,19 +56,23 @@ const routes = [
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {
-        path: '/hackathon/colony',
+        path: '/hackathon/api3',
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {
-        path: '/hackathon/trader-joe',
+        path: '/hackathon/ceramic',
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {
-        path: '/hackathon/yield-yak',
+        path: '/hackathon/harmony',
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {
-        path: '/hackathon/yield-yak',
+        path: '/hackathon/lit',
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+    },
+    {
+        path: '/hackathon/livepeer',
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {

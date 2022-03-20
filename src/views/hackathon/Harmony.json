@@ -1,0 +1,11 @@
+{
+    "name": "Harmony",
+    "challengeTitle": "Unique Usages for Non-fungible Tokens",
+    "challengeDesc": "We are all familiar with how NFTs can prove ownership and have been used to show membership in a club or ownership of a digital image. But that is not all. What ELSE can an NFT do? How can you use NFTs in a metaverse? What other rights can be imbedded into an NFT? Can you solve joint ownership of an NFT? An NFT timeshare?",
+    "source": "https://www.ethdenver.com/bounties/harmony",
+    "benefitIntro": "Our team has integrated the 1inch adapter containing isValidSignature, getMakerAmount (which calculates return amount based on DEX (“getReturn” function) and transferFrm (which triggers swaps and sends to takerAddress).",
+    "benefit1": "What other rights can be imbedded into an NFT?",
+    "benefit2": "Can you solve joint ownership of an NFT?",
+    "benefit3": "An NFT timeshare?",
+    "benefitClose": "We will continue to research & explore new and better ways of integrating with 1inch."
+}

@@ -174,34 +174,34 @@ export default {
                 this.sponsor = require('./hackathon/API3.json')
                 this.featured = 'api3'
                 break
-            // case '/hackathon/trader-joe':
-            //     this.sponsor = require('./hackathon/TraderJoe.json')
-            //     this.featured = 'trader-joe'
-            //     break
-            // case '/hackathon/yield-yak':
-            //     this.sponsor = require('./hackathon/YieldYak.json')
-            //     this.featured = 'yield-yak'
-            //     break
-            // case '/hackathon/yield-yak':
-            //     this.sponsor = require('./hackathon/YieldYak.json')
-            //     this.featured = 'yield-yak'
-            //     break
-            // case '/hackathon/yield-yak':
-            //     this.sponsor = require('./hackathon/YieldYak.json')
-            //     this.featured = 'yield-yak'
-            //     break
+            case '/hackathon/ceramic':
+                this.sponsor = require('./hackathon/Ceramic.json')
+                this.featured = 'ceramic'
+                break
+            case '/hackathon/harmony':
+                this.sponsor = require('./hackathon/Harmony.json')
+                this.featured = 'harmony'
+                break
+            case '/hackathon/lit':
+                this.sponsor = require('./hackathon/Lit.json')
+                this.featured = 'lit'
+                break
+            case '/hackathon/livepeer':
+                this.sponsor = require('./hackathon/Livepeer.json')
+                this.featured = 'livepeer'
+                break
             case '/hackathon/rarible':
                 this.sponsor = require('./hackathon/Rarible.json')
                 this.featured = 'rarible'
                 break
-            // case '/hackathon/yield-yak':
-            //     this.sponsor = require('./hackathon/YieldYak.json')
-            //     this.featured = 'yield-yak'
-            //     break
-            // case '/hackathon/yield-yak':
-            //     this.sponsor = require('./hackathon/YieldYak.json')
-            //     this.featured = 'yield-yak'
-            //     break
+            case '/hackathon/tableland':
+                this.sponsor = require('./hackathon/Tableland.json')
+                this.featured = 'tableland'
+                break
+            case '/hackathon/yearn':
+                this.sponsor = require('./hackathon/Yearn.json')
+                this.featured = 'yearn'
+                break
             }
         }
     },
@@ -238,34 +238,34 @@ export default {
             this.sponsor = require('./hackathon/API3.json')
             this.featured = 'api3'
             break
-        // case '/hackathon/trader-joe':
-        //     this.sponsor = require('./hackathon/TraderJoe.json')
-        //     this.featured = 'trader-joe'
-        //     break
-        // case '/hackathon/yield-yak':
-        //     this.sponsor = require('./hackathon/YieldYak.json')
-        //     this.featured = 'yield-yak'
-        //     break
-        // case '/hackathon/yield-yak':
-        //     this.sponsor = require('./hackathon/YieldYak.json')
-        //     this.featured = 'yield-yak'
-        //     break
-        // case '/hackathon/yield-yak':
-        //     this.sponsor = require('./hackathon/YieldYak.json')
-        //     this.featured = 'yield-yak'
-        //     break
+        case '/hackathon/ceramic':
+            this.sponsor = require('./hackathon/Ceramic.json')
+            this.featured = 'ceramic'
+            break
+        case '/hackathon/harmony':
+            this.sponsor = require('./hackathon/Harmony.json')
+            this.featured = 'harmony'
+            break
+        case '/hackathon/lit':
+            this.sponsor = require('./hackathon/Lit.json')
+            this.featured = 'lit'
+            break
+        case '/hackathon/livepeer':
+            this.sponsor = require('./hackathon/Livepeer.json')
+            this.featured = 'livepeer'
+            break
         case '/hackathon/rarible':
             this.sponsor = require('./hackathon/Rarible.json')
             this.featured = 'rarible'
             break
-        // case '/hackathon/yield-yak':
-        //     this.sponsor = require('./hackathon/YieldYak.json')
-        //     this.featured = 'yield-yak'
-        //     break
-        // case '/hackathon/yield-yak':
-        //     this.sponsor = require('./hackathon/YieldYak.json')
-        //     this.featured = 'yield-yak'
-        //     break
+        case '/hackathon/tableland':
+            this.sponsor = require('./hackathon/Tableland.json')
+            this.featured = 'tableland'
+            break
+        case '/hackathon/yearn':
+            this.sponsor = require('./hackathon/Yearn.json')
+            this.featured = 'yearn'
+            break
         }
     },
     mounted: function () {
