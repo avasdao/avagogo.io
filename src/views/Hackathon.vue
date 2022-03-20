@@ -108,17 +108,17 @@
                     <h2 class="sr-only" id="quick-links-title">Quick links</h2>
 
                     <div class="rounded-tl-lg rounded-tr-lg sm:rounded-tr-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-16" src="https://i.imgur.com/A6kPXTc.png" />
+                        <img class="h-24" src="https://i.imgur.com/D0OMVvd.png" />
                         <div class="mt-5">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/hackathon/alpha-finance-lab" class="focus:outline-none">
+                                <router-link to="/hackathon/1inch" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
-                                    Best Alpha Finance Lab dApp
+                                    NFT Marketplace on the 1inch Limit Order Protocol
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500 hidden">
-                                Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                            <p class="mt-2 text-sm text-gray-500">
+                                An adapter for creating limit orders over the 1inch Liquidity Protocol or over any decentralized exchange (DEX), based on their available liquidity.
                             </p>
                         </div>
                         <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -131,17 +131,17 @@
                     </div>
 
                     <div class="sm:rounded-tr-lg relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-16" src="https://i.imgur.com/4r0Sjfq.png" />
+                        <img class="h-24" src="https://i.imgur.com/lpeNThH.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/hackathon/benqi" class="focus:outline-none">
+                                <router-link to="/hackathon/aave" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
-                                    Best BENQI dApp
+                                    Aave
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500 hidden">
-                                Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                            <p class="mt-2 text-sm text-gray-500">
+                                Best use of Aave v3.
                             </p>
                         </div>
                         <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -154,7 +154,7 @@
                     </div>
 
                     <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-16" src="https://i.imgur.com/KGwVWUC.png" />
+                        <img class="h-24" src="https://i.imgur.com/KGwVWUC.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
                                 <router-link to="/hackathon/trader-joe" class="focus:outline-none">
@@ -163,7 +163,7 @@
                                     Revamp Analytics Dashboard + Portfolio Tracker for Trader Joe DEX & Lending
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500 hidden">
+                            <p class="mt-2 text-sm text-gray-500">
                                 Trader Joe is looking for a portfolio tracker with a brilliant user experience. This tracker should track users’ positions in pools, farms, and money markets.
                             </p>
                         </div>
@@ -177,7 +177,7 @@
                     </div>
 
                     <div class="rounded-bl-lg rounded-br-lg sm:rounded-bl-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-16" src="https://i.imgur.com/tDe10Qs.png" />
+                        <img class="h-24" src="https://i.imgur.com/tDe10Qs.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
                                 <router-link to="/hackathon/yield-yak" class="focus:outline-none">
@@ -187,7 +187,7 @@
                                     <br />+ Use of Interest-Bearing Assets
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500 hidden">
+                            <p class="mt-2 text-sm text-gray-500">
                                 Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
                             </p>
                         </div>
@@ -201,7 +201,7 @@
                     </div>
 
                     <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-16" src="https://i.imgur.com/TRh2svH.png" />
+                        <img class="h-24" src="https://i.imgur.com/TRh2svH.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
                                 <router-link to="/hackathon/colony" class="focus:outline-none">
@@ -210,7 +210,7 @@
                                     The First Index on Avalanche
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500 hidden">
+                            <p class="mt-2 text-sm text-gray-500">
                                 Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
                             </p>
                         </div>

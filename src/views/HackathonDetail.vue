@@ -58,7 +58,7 @@
                 </p>
 
                 <p>
-                    The <strong>KEY BENEFITS</strong> that our solution provides for your products' users are:
+                    We believe there are <strong>3 KEY BENEFITS</strong> that Ava's native integration provides for {{sponsor.name}}'s community of users:
                 </p>
 
                 <ul role="list">
@@ -92,7 +92,7 @@
 
                 <p>
                     Nothing is better than seeing it with you own eyes.
-                    Please take a moment and watch this LIVE simulation of how the team at Ava GoGo have <strong>integrated our desktop and mobile dApps with {{sponsor ? sponsor.name : ''}}.</strong>
+                    Please take a moment and watch this LIVE simulation of how the team at Ava GoGo have <strong>integrated our native mobile dApp with {{sponsor ? sponsor.name : ''}}.</strong>
                 </p>
 
                 <a href="/media/ava-gogo-first-promo-video.mp4" target="_blank" class="flex flex-col items-center relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 no-underline">
@@ -162,13 +162,13 @@ export default {
             console.log('ROUTE CHANGE (watch):', to, from)
 
             switch(to.path) {
-            case '/hackathon/alpha-finance-lab':
-                this.sponsor = require('./hackathon/Alpha.json')
-                this.featured = 'alpha'
+            case '/hackathon/1inch':
+                this.sponsor = require('./hackathon/1inch.json')
+                this.featured = '1inch'
                 break
-            case '/hackathon/benqi':
-                this.sponsor = require('./hackathon/BENQI.json')
-                this.featured = 'benqi'
+            case '/hackathon/aave':
+                this.sponsor = require('./hackathon/Aave.json')
+                this.featured = 'aave'
                 break
             case '/hackathon/colony':
                 this.sponsor = require('./hackathon/Colony.json')
@@ -206,13 +206,13 @@ export default {
         // console.log('PATH', path)
 
         switch(path) {
-        case '/hackathon/alpha-finance-lab':
-            this.sponsor = require('./hackathon/Alpha.json')
-            this.featured = 'alpha'
+        case '/hackathon/1inch':
+            this.sponsor = require('./hackathon/1inch.json')
+            this.featured = '1inch'
             break
-        case '/hackathon/benqi':
-            this.sponsor = require('./hackathon/BENQI.json')
-            this.featured = 'benqi'
+        case '/hackathon/aave':
+            this.sponsor = require('./hackathon/Aave.json')
+            this.featured = 'aave'
             break
         case '/hackathon/colony':
             this.sponsor = require('./hackathon/Colony.json')

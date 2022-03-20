@@ -48,11 +48,11 @@ const routes = [
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/Hackathon.vue')
     },
     {
-        path: '/hackathon/alpha-finance-lab',
+        path: '/hackathon/1inch',
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {
-        path: '/hackathon/benqi',
+        path: '/hackathon/aave',
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
     {
