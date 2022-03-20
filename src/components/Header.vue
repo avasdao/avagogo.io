@@ -32,7 +32,7 @@
                             Download
                         </a>
 
-                        <div>
+                        <div class="hidden">
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
                                 @click="toggleHackathon"
@@ -61,8 +61,8 @@
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <div v-if="showHackathon" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-white">
-                                <ExtrasMenu @close-all="closeAll" />
+                            <div v-if="showHackathon" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg">
+                                <HackathonMenu @close-all="closeAll" />
                             </div>
                         </div>
 
@@ -99,17 +99,20 @@
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <div v-if="showMenu" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg">
-                                <HackathonMenu @close-all="closeAll" />
+                            <div v-if="showMenu" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-white">
+                                <ExtrasMenu @close-all="closeAll" />
                             </div>
                         </div>
                     </nav>
 
                     <div class="flex items-center md:ml-12">
                         <span class="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-                            <router-link to="/dashboard" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
-                                Open Dashboard
+                            <router-link to="/hackathon" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
+                                #ETHDenver2022
                             </router-link>
+                            <!-- <router-link to="/dashboard" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
+                                Open Dashboard
+                            </router-link> -->
                         </span>
                     </div>
                 </div>
@@ -313,13 +316,13 @@ export default {
         },
 
         toggleExtras() {
-            this.showMenu = false
-            this.showHackathon = !this.showHackathon
+            this.showHackathon = false
+            this.showMenu = !this.showMenu
         },
 
         toggleHackathon() {
-            this.showHackathon = false
-            this.showMenu = !this.showMenu
+            this.showMenu = false
+            this.showHackathon = !this.showHackathon
         },
     },
     created: function () {

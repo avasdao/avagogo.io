@@ -20,7 +20,7 @@
                         <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
                             <h1>
                                 <span class="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-                                    Moralis + Avalanche Hackathon
+                                    #ETHDenver2022 Hackathon
                                 </span>
                                 <span class="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
                                     <span class="block text-gray-900">Ava GoGo is</span>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
 
-                        <a href="/media/ava-gogo-first-promo-video.mp4" target="_blank" class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                        <a href="/media/hackathon-banner.mp4" target="_blank" class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
                             <svg class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 scale-75 origin-top sm:scale-100 lg:hidden" width="640" height="784" fill="none" viewBox="0 0 640 784" aria-hidden="true">
                                 <defs>
                                     <pattern id="4f4f415c-a0e9-44c2-9601-6ded5a34a13e" x="118" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -79,10 +79,12 @@
                                 <rect x="118" width="404" height="784" fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
                             </svg>
 
-                            <div class="flex flex-col items-center relative mx-auto w-full lg:w-48 rounded-lg shadow-lg lg:max-w-md">
+                            <div class="flex flex-col items-center relative mx-auto w-full lg:w-96 rounded-lg shadow-lg lg:max-w-md">
                                 <button type="button" class="flex flex-col items-center relative w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                     <span class="sr-only">Watch our video to learn more</span>
-                                    <img class="w-full lg:w-48" src="/media/ava-gogo-first-promo-thumb.png" alt="" />
+
+                                    <img class="w-full" src="/media/hackathon-banner.png" alt="" />
+
                                     <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
                                         <svg class="h-20 w-20 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
                                             <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
@@ -92,6 +94,7 @@
                                 </button>
                             </div>
                         </a>
+
                     </div>
                 </main>
             </div>
