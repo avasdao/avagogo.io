@@ -67,6 +67,22 @@ const routes = [
         path: '/hackathon/yield-yak',
         component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
     },
+    {
+        path: '/hackathon/yield-yak',
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+    },
+    {
+        path: '/hackathon/rarible',
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+    },
+    {
+        path: '/hackathon/tableland',
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+    },
+    {
+        path: '/hackathon/yearn',
+        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+    },
 
     // DEFI SCREENS
     {

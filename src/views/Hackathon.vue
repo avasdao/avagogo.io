@@ -114,10 +114,13 @@
                                 <router-link to="/hackathon/1inch" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
+                                    <h1 class="text-2xl text-indigo-500 font-light">
+                                        <span class="text-lg text-indigo-300 font-bold">#1</span> 1inch
+                                    </h1>
                                     NFT Marketplace on the 1inch Limit Order Protocol
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500">
+                            <p class="mt-2 text-base text-gray-500">
                                 An adapter for creating limit orders over the 1inch Liquidity Protocol or over any decentralized exchange (DEX), based on their available liquidity.
                             </p>
                         </div>
@@ -137,11 +140,40 @@
                                 <router-link to="/hackathon/aave" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
-                                    Aave
+                                    <h1 class="text-2xl text-indigo-500 font-light">
+                                        <span class="text-lg text-indigo-300 font-bold">#2</span> Aave
+                                    </h1>
+                                    Best Use Of Aave V3
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500">
+                            <p class="mt-2 text-base text-gray-500">
                                 Best use of Aave v3.
+                            </p>
+                        </div>
+                        <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"
+                                />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="rounded-bl-lg rounded-br-lg sm:rounded-bl-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                        <img class="h-24" src="https://i.imgur.com/EeqYXlJ.png" />
+                        <div class="mt-8">
+                            <h3 class="text-lg font-medium">
+                                <router-link to="/hackathon/api3" class="focus:outline-none">
+                                    <!-- Extend touch target to entire panel -->
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    <h1 class="text-2xl text-indigo-500 font-light">
+                                        <span class="text-lg text-indigo-300 font-bold">#3</span> API3
+                                    </h1>
+                                    The Masses Against The Classes
+                                </router-link>
+                            </h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Project that is judged most likely to attract the largest user adoption or show the greatest commercial viability.
                             </p>
                         </div>
                         <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -160,35 +192,14 @@
                                 <router-link to="/hackathon/trader-joe" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
+                                    <h1 class="text-2xl text-indigo-500 font-light">
+                                        <span class="text-lg text-indigo-300 font-bold">#4</span> Ceramic
+                                    </h1>
                                     Revamp Analytics Dashboard + Portfolio Tracker for Trader Joe DEX & Lending
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500">
+                            <p class="mt-2 text-base text-gray-500">
                                 Trader Joe is looking for a portfolio tracker with a brilliant user experience. This tracker should track users’ positions in pools, farms, and money markets.
-                            </p>
-                        </div>
-                        <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
-                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"
-                                />
-                            </svg>
-                        </span>
-                    </div>
-
-                    <div class="rounded-bl-lg rounded-br-lg sm:rounded-bl-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
-                        <img class="h-24" src="https://i.imgur.com/tDe10Qs.png" />
-                        <div class="mt-8">
-                            <h3 class="text-lg font-medium">
-                                <router-link to="/hackathon/yield-yak" class="focus:outline-none">
-                                    <!-- Extend touch target to entire panel -->
-                                    <span class="absolute inset-0" aria-hidden="true"></span>
-                                    Best Yield Yak Front-End Integration
-                                    <br />+ Use of Interest-Bearing Assets
-                                </router-link>
-                            </h3>
-                            <p class="mt-2 text-sm text-gray-500">
-                                Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
                             </p>
                         </div>
                         <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -207,11 +218,144 @@
                                 <router-link to="/hackathon/colony" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
+                                    <h1 class="text-2xl text-indigo-500 font-light">
+                                        <span class="text-lg text-indigo-300 font-bold">#5</span> Harmony
+                                    </h1>
                                     The First Index on Avalanche
                                 </router-link>
                             </h3>
-                            <p class="mt-2 text-sm text-gray-500">
+                            <p class="mt-2 text-base text-gray-500">
                                 Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                            </p>
+                        </div>
+                        <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"
+                                />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                        <img class="h-24" src="https://i.imgur.com/KGwVWUC.png" />
+                        <div class="mt-8">
+                            <h3 class="text-lg font-medium">
+                                <router-link to="/hackathon/trader-joe" class="focus:outline-none">
+                                    <!-- Extend touch target to entire panel -->
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    <h1 class="text-2xl text-indigo-500 font-light">
+                                        <span class="text-lg text-indigo-300 font-bold">#6</span> Lit Protocol
+                                    </h1>
+                                    Revamp Analytics Dashboard + Portfolio Tracker for Trader Joe DEX & Lending
+                                </router-link>
+                            </h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Trader Joe is looking for a portfolio tracker with a brilliant user experience. This tracker should track users’ positions in pools, farms, and money markets.
+                            </p>
+                        </div>
+                        <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"
+                                />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                        <img class="h-24" src="https://i.imgur.com/TRh2svH.png" />
+                        <div class="mt-8">
+                            <h3 class="text-lg font-medium">
+                                <router-link to="/hackathon/colony" class="focus:outline-none">
+                                    <!-- Extend touch target to entire panel -->
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    <h1 class="text-2xl text-indigo-500 font-light">
+                                        <span class="text-lg text-indigo-300 font-bold">#7</span> Livepeer Inc.
+                                    </h1>
+                                    The First Index on Avalanche
+                                </router-link>
+                            </h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                            </p>
+                        </div>
+                        <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"
+                                />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="rounded-bl-lg rounded-br-lg sm:rounded-bl-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                        <img class="h-24" src="https://i.imgur.com/ZysMiEx.png" />
+                        <div class="mt-8">
+                            <h3 class="text-lg font-medium">
+                                <router-link to="/hackathon/rarible" class="focus:outline-none">
+                                    <!-- Extend touch target to entire panel -->
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    <h1 class="text-2xl text-indigo-500 font-light">
+                                        <span class="text-lg text-indigo-300 font-bold">#8</span> Rarible DAO
+                                    </h1>
+                                    Most Beautiful Applications Using Rarible's Protocol
+                                </router-link>
+                            </h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                The most beautiful applications using Rarible Protocol’s indexer or exchange, the best NFT minting application using the lazy minting feature, or the most innovative NFT applications using or planning to use the Protocol’s indexer or exchange.
+                            </p>
+                        </div>
+                        <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"
+                                />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                        <img class="h-24" src="https://i.imgur.com/7dHkZrm.png" />
+                        <div class="mt-8">
+                            <h3 class="text-lg font-medium">
+                                <router-link to="/hackathon/tableland" class="focus:outline-none">
+                                    <!-- Extend touch target to entire panel -->
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    <h1 class="text-2xl text-indigo-500 font-light">
+                                        <span class="text-lg text-indigo-300 font-bold">#9</span> Tableland (Textile)
+                                    </h1>
+                                    Dynamic &amp; Private NFT Metadata with Tableland + Lit Protocol
+                                </router-link>
+                            </h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                We are looking for projects that make full use of the Tableland features to build the metadata layer in their projects.
+                            </p>
+                        </div>
+                        <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"
+                                />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="rounded-bl-lg rounded-br-lg sm:rounded-bl-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                        <img class="h-24" src="https://i.imgur.com/ILF49In.png" />
+                        <div class="mt-8">
+                            <h3 class="text-lg font-medium">
+                                <router-link to="/hackathon/yearn" class="focus:outline-none">
+                                    <!-- Extend touch target to entire panel -->
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    <h1 class="text-2xl text-indigo-500 font-light">
+                                        <span class="text-lg text-indigo-300 font-bold">#10</span> Yearn Finance
+                                    </h1>
+                                    Most Interesting Data Analysis or Monitoring of Yearn
+                                </router-link>
+                            </h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Create a dashboard or a monitoring tool to be able to check Yearn vaults, strategies, and the underlying protocols. You can get some inspiration from yearn.
                             </p>
                         </div>
                         <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">

@@ -170,18 +170,38 @@ export default {
                 this.sponsor = require('./hackathon/Aave.json')
                 this.featured = 'aave'
                 break
-            case '/hackathon/colony':
-                this.sponsor = require('./hackathon/Colony.json')
-                this.featured = 'colony'
+            case '/hackathon/api3':
+                this.sponsor = require('./hackathon/API3.json')
+                this.featured = 'api3'
                 break
-            case '/hackathon/trader-joe':
-                this.sponsor = require('./hackathon/TraderJoe.json')
-                this.featured = 'trader-joe'
+            // case '/hackathon/trader-joe':
+            //     this.sponsor = require('./hackathon/TraderJoe.json')
+            //     this.featured = 'trader-joe'
+            //     break
+            // case '/hackathon/yield-yak':
+            //     this.sponsor = require('./hackathon/YieldYak.json')
+            //     this.featured = 'yield-yak'
+            //     break
+            // case '/hackathon/yield-yak':
+            //     this.sponsor = require('./hackathon/YieldYak.json')
+            //     this.featured = 'yield-yak'
+            //     break
+            // case '/hackathon/yield-yak':
+            //     this.sponsor = require('./hackathon/YieldYak.json')
+            //     this.featured = 'yield-yak'
+            //     break
+            case '/hackathon/rarible':
+                this.sponsor = require('./hackathon/Rarible.json')
+                this.featured = 'rarible'
                 break
-            case '/hackathon/yield-yak':
-                this.sponsor = require('./hackathon/YieldYak.json')
-                this.featured = 'yield-yak'
-                break
+            // case '/hackathon/yield-yak':
+            //     this.sponsor = require('./hackathon/YieldYak.json')
+            //     this.featured = 'yield-yak'
+            //     break
+            // case '/hackathon/yield-yak':
+            //     this.sponsor = require('./hackathon/YieldYak.json')
+            //     this.featured = 'yield-yak'
+            //     break
             }
         }
     },
@@ -214,18 +234,38 @@ export default {
             this.sponsor = require('./hackathon/Aave.json')
             this.featured = 'aave'
             break
-        case '/hackathon/colony':
-            this.sponsor = require('./hackathon/Colony.json')
-            this.featured = 'colony'
+        case '/hackathon/api3':
+            this.sponsor = require('./hackathon/API3.json')
+            this.featured = 'api3'
             break
-        case '/hackathon/trader-joe':
-            this.sponsor = require('./hackathon/TraderJoe.json')
-            this.featured = 'trader-joe'
+        // case '/hackathon/trader-joe':
+        //     this.sponsor = require('./hackathon/TraderJoe.json')
+        //     this.featured = 'trader-joe'
+        //     break
+        // case '/hackathon/yield-yak':
+        //     this.sponsor = require('./hackathon/YieldYak.json')
+        //     this.featured = 'yield-yak'
+        //     break
+        // case '/hackathon/yield-yak':
+        //     this.sponsor = require('./hackathon/YieldYak.json')
+        //     this.featured = 'yield-yak'
+        //     break
+        // case '/hackathon/yield-yak':
+        //     this.sponsor = require('./hackathon/YieldYak.json')
+        //     this.featured = 'yield-yak'
+        //     break
+        case '/hackathon/rarible':
+            this.sponsor = require('./hackathon/Rarible.json')
+            this.featured = 'rarible'
             break
-        case '/hackathon/yield-yak':
-            this.sponsor = require('./hackathon/YieldYak.json')
-            this.featured = 'yield-yak'
-            break
+        // case '/hackathon/yield-yak':
+        //     this.sponsor = require('./hackathon/YieldYak.json')
+        //     this.featured = 'yield-yak'
+        //     break
+        // case '/hackathon/yield-yak':
+        //     this.sponsor = require('./hackathon/YieldYak.json')
+        //     this.featured = 'yield-yak'
+        //     break
         }
     },
     mounted: function () {
