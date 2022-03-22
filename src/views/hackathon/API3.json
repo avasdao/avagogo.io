@@ -3,9 +3,9 @@
     "challengeTitle": "The Masses Against The Classes",
     "challengeDesc": "Project that is judged most likely to attract the largest user adoption or show the greatest commercial viability.",
     "source": "https://www.ethdenver.com/bounties/api3",
-    "benefitIntro": "Our team has compiled & built an index of the TOP Avalanche projects.",
-    "benefit1": "Newbies and PROs can easily invest in the TOP Avalanche projects.",
-    "benefit2": "Introduce an Avlanache Push Notification System (APNS.io) for greater mobile user engagement.",
-    "benefit3": "The Colony DAO maintains FULL control over the fund's operations.",
-    "benefitClose": "We will continue to research & explore new and better ways of integrating with Aave."
+    "benefitIntro": "Our team has transitioned from 3rd-party API services like Chainlink to API3's Beacons, in order to better secure our platform's data integrations.",
+    "benefit1": "Offer a much greater <span class=\"font-bold text-yellow-500\">assurance against data errors</span>.",
+    "benefit2": "<span class=\"font-bold text-yellow-500\">Real-time data notifications</span>, with an integration to Ava's Push Notification Service (APNS.io).",
+    "benefit3": "Encourage the need for <span class=\"font-bold text-yellow-500\">'Verifiable' Transparency</span> of the data being presented to users.",
+    "benefitClose": "We will continue to research & explore new and better ways of integrating with API3."
 }

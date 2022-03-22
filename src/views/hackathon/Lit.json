@@ -3,9 +3,9 @@
     "challengeTitle": "Hub - A Data Self-sovereignty Implementation and SDK",
     "challengeDesc": "For this bounty, use Lit Protocol and Ceramic Network to create a novel consent and data sharing system for individual users and the applications they use.",
     "source": "https://www.ethdenver.com/bounties/lit-protocol",
-    "benefitIntro": "Our team has integrated the 1inch adapter containing isValidSignature, getMakerAmount (which calculates return amount based on DEX (“getReturn” function) and transferFrm (which triggers swaps and sends to takerAddress).",
-    "benefit1": "Our beautiful NEW native mobile UI/UX, for trading anywhere at anytime.",
-    "benefit2": "Introduce an Avlanache Push Notification System (APNS.io) for greater mobile user engagement.",
-    "benefit3": "Curate a community of trading experts that can trustlessly manage their Alpha Finance portfolios.",
-    "benefitClose": "We will continue to research & explore new and better ways of integrating with 1inch."
+    "benefitIntro": "Our team has fully integrated Lit Protocol into our community application, allowing users full control over their content.",
+    "benefit1": "Our beautiful NEW native mobile UI/UX permits users to <span class=\"font-bold text-yellow-500\">Create, Manage and Share</span> their permissioned content.",
+    "benefit2": "Users can easily <span class=\"font-bold text-yellow-500\">verify and consume private content</span> created with the Lit Protocol.",
+    "benefit3": "Encourage greater use of <span class=\"font-bold text-yellow-500\">permissioned and private content</span> throughout the Web3 community.",
+    "benefitClose": "We will continue to research & explore new and better ways of integrating with Lit Protocol."
 }

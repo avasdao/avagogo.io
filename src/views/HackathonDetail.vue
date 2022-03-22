@@ -91,10 +91,10 @@
                     Please take a moment and watch this LIVE simulation of how the team at Ava GoGo have <strong>integrated our native mobile dApp with {{sponsor ? sponsor.name : ''}}.</strong>
                 </p>
 
-                <a href="/media/ava-gogo-first-promo-video.mp4" target="_blank" class="flex flex-col items-center relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 no-underline">
+                <a href="https://media.avagogo.io/ava-gogo-first-promo-video.mp4" target="_blank" class="flex flex-col items-center relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 no-underline">
                     <span class="sr-only">Watch our video to learn more</span>
 
-                    <img class="w-full lg:w-48 rounded-xl" src="/media/ava-gogo-first-promo-thumb.png" alt="Ava Gogo Promo Video" />
+                    <img class="w-full lg:w-48 rounded-xl" src="https://media.avagogo.io/ava-gogo-first-promo-thumb.png" alt="Ava Gogo Promo Video" />
 
                     <!-- play button -->
                     <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">

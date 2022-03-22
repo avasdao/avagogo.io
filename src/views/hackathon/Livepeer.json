@@ -2,10 +2,10 @@
     "name": "Livepeer",
     "challengeTitle": "Best Creator, Gaming or Metaverse App",
     "challengeDesc": "Technicality, originality, practicality and WOW factor.",
-    "source": "https://www.ethdenver.com/bounties/1inch",
-    "benefitIntro": "Our team has integrated the 1inch adapter containing isValidSignature, getMakerAmount (which calculates return amount based on DEX (“getReturn” function) and transferFrm (which triggers swaps and sends to takerAddress).",
-    "benefit1": "Our beautiful NEW native mobile UI/UX, for trading anywhere at anytime.",
-    "benefit2": "Introduce an Avlanache Push Notification System (APNS.io) for greater mobile user engagement.",
-    "benefit3": "Curate a community of trading experts that can trustlessly manage their Alpha Finance portfolios.",
-    "benefitClose": "We will continue to research & explore new and better ways of integrating with 1inch."
+    "source": "https://www.ethdenver.com/bounties/livepeer",
+    "benefitIntro": "Our team has completed a livestreeming integration for easy RTMP streaming over the Livepeer platform.",
+    "benefit1": "Our beautiful NEW native mobile UI/UX will encourage <span class=\"font-bold text-yellow-500\">livestreaming from anywhere at anytime</span>.",
+    "benefit2": "Our beautiful NEW native mobile UI/UX will encourage <span class=\"font-bold text-yellow-500\">consuming livestreams while on-the-go</span>.",
+    "benefit3": "Receive <span class=\"font-bold text-yellow-500\">real-time notifications of your favorite livestreams</span> using Ava's Push Notification Service (APNS.io).",
+    "benefitClose": "We will continue to research & explore new and better ways of integrating with Livepeer Inc."
 }

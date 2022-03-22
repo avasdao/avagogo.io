@@ -1,11 +1,11 @@
 {
-    "name": "Tableland (Textile)",
+    "name": "Tableland",
     "challengeTitle": "Dynamic & Private NFT Metadata with Tableland + Lit Protocol",
     "challengeDesc": "We are looking for projects that make full use of the Tableland features to build the metadata layer in their projects.",
     "source": "https://www.ethdenver.com/bounties/tableland-textile",
-    "benefitIntro": "Our team has fully integrated Yield Yak into our platform.",
-    "benefit1": "Our beautiful NEW native mobile UI/UX, for trading anywhere at anytime.",
-    "benefit2": "Introduce an Avlanache Push Notification System (APNS.io) for greater mobile user engagement.",
-    "benefit3": "Experienced traders have new and better tools.",
-    "benefitClose": "We will continue to research & explore new and better ways of integrating with Aave."
+    "benefitIntro": "Our team has plans to integrate the newly released decentralized NFT metadata layer from Tableland, allowing our users to easlily protect ALL of their NFT data.",
+    "benefit1": "Our beautiful NEW native mobile UI/UX will make it easy to <span class=\"font-bold text-yellow-500\">Create & Manage Private NFT Metadata</span> from anywhere at anytime.",
+    "benefit2": "We'll allow consumers to <span class=\"font-bold text-yellow-500\">Safely Store Sensitive Data On-chain</span> for access by content owners & fulfillment managers ONLY.",
+    "benefit3": "<span class=\"font-bold text-yellow-500\">Encourage greater on-chain private data usage</span> throughout the Web3 community.",
+    "benefitClose": "We will continue to research & explore new and better ways of integrating with Tableland."
 }

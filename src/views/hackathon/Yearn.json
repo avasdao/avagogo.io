@@ -1,11 +1,11 @@
 {
     "name": "Yearn Finance",
     "challengeTitle": "Most Interesting Data Analysis or Monitoring of Yearn",
-    "challengeDesc": "Create a dashboard or a monitoring tool to be able to check Yearn vaults, strategies, and the underlying protocols. You can get some inspiration from yearn.",
+    "challengeDesc": "Create a dashboard or a monitoring tool to be able to check Yearn vaults, strategies, and the underlying protocols.",
     "source": "https://www.ethdenver.com/bounties/yearn-finance",
-    "benefitIntro": "Our team has fully integrated Yield Yak into our platform.",
-    "benefit1": "Our beautiful NEW native mobile UI/UX, for trading anywhere at anytime.",
-    "benefit2": "Introduce an Avlanache Push Notification System (APNS.io) for greater mobile user engagement.",
-    "benefit3": "Experienced traders have new and better tools.",
-    "benefitClose": "We will continue to research & explore new and better ways of integrating with Aave."
+    "benefitIntro": "Our team has fully integrated Yearn Vaults into our mobile platform.",
+    "benefit1": "Our beautiful NEW native mobile UI/UX encourages <span class=\"font-bold text-yellow-500\">monitoring & trading assets</span> anywhere at anytime.",
+    "benefit2": "Quickly and easily <span class=\"font-bold text-yellow-500\">search by vault/strategy, address/name, strategist</span> and more..",
+    "benefit3": "Receive <span class=\"font-bold text-yellow-500\">real-time health check & strategy notifications</span> via Ava's Push Notification Service (APNS.io).",
+    "benefitClose": "We will continue to research & explore new and better ways of integrating with Yearn Finance."
 }

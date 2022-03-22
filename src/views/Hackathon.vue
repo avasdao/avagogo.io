@@ -327,7 +327,7 @@
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
-                                        <span class="text-lg text-indigo-300 font-bold">#9</span> Tableland (Textile)
+                                        <span class="text-lg text-indigo-300 font-bold">#9</span> Tableland
                                     </h1>
                                     Dynamic &amp; Private NFT Metadata with Tableland + Lit Protocol
                                 </router-link>

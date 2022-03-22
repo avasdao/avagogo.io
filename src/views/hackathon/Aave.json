@@ -4,8 +4,8 @@
     "challengeDesc": "With the new features of Aave V3, there is lots of room for potential innovation.",
     "source": "https://www.ethdenver.com/bounties/aave",
     "benefitIntro": "With the new features of Aave V3, there is lots of room for potential innovation.",
-    "benefit1": "Cross market arbitrage using flashloans and portals.",
-    "benefit2": "Mechanisms for permissionless listing that uses Listing admins.",
-    "benefit3": "Aave Forex tool. Short assets 10-50x using emode, flashloans and curve.",
+    "benefit1": "<span class=\"font-bold text-yellow-500\">Cross market arbitrage</span> using flashloans and portals.",
+    "benefit2": "Mechanisms for <span class=\"font-bold text-yellow-500\">permissionless listing</span> that uses Listing admins.",
+    "benefit3": "<span class=\"font-bold text-yellow-500\">Governance portal (w/ submission, voting, delegating & push notifications)</span> to encourage greater participation of Aava stakeholders.",
     "benefitClose": "We will continue to research & explore new and better ways of integrating with Aave."
 }
