@@ -1,11 +1,11 @@
 {
     "name": "Harmony",
     "challengeTitle": "Unique Usages for Non-fungible Tokens",
-    "challengeDesc": "We are all familiar with how NFTs can prove ownership and have been used to show membership in a club or ownership of a digital image. But that is not all. What ELSE can an NFT do? How can you use NFTs in a metaverse? What other rights can be imbedded into an NFT? Can you solve joint ownership of an NFT? An NFT timeshare?",
+    "challengeDesc": "We are all familiar with how NFTs can prove ownership and have been used to show membership in a club or ownership of a digital image. <br /><br /><span class=\"text-3xl\">But that is not all.</span> <br /><br />What ELSE can an NFT do? How can you use NFTs in a metaverse? What other rights can be imbedded into an NFT? Can you solve joint ownership of an NFT? An NFT timeshare?",
     "source": "https://www.ethdenver.com/bounties/harmony",
-    "benefitIntro": "Our team has integrated the 1inch adapter containing isValidSignature, getMakerAmount (which calculates return amount based on DEX (“getReturn” function) and transferFrm (which triggers swaps and sends to takerAddress).",
-    "benefit1": "What other rights can be imbedded into an NFT?",
-    "benefit2": "Can you solve joint ownership of an NFT?",
-    "benefit3": "An NFT timeshare?",
-    "benefitClose": "We will continue to research & explore new and better ways of integrating with 1inch."
+    "benefitIntro": "Given that NFTs are selling for significant amounts of money the idea of fractionalization is popping up to allow smaller investors a chance to get involved. <br /><br />Owning just a portion of a piece of digital art is an approach becoming more appealing to collectors, after a concept called Fractional Non-Fungible Tokens (F-NFTs) was originally conceived in 2018 as a way to offer shared ownership. <br /><br />In essence, this allows anybody to invest in a valuable item. The process of fractionalization or sharding as it is also known is quite simple. Take 1 NFT and break it down into segments, each with its own token and value proportionate to the original NFT.",
+    "benefit1": "Harmony users can now <span class=\"font-bold text-yellow-500\">Create, Buy & Sell</span> fractions of an NFT.",
+    "benefit2": "Harmony users can now <span class=\"font-bold text-yellow-500\">Purchase a Single Month</span> (each and every year) of an NFT timeshare.",
+    "benefit3": "Anyone from the Harmony community can now openly <span class=\"font-bold text-yellow-500\">Trade \"Fractional\" NFTs</span> on Ava's in-app marketplace.",
+    "benefitClose": "In the future we hope to be able to expand the \"fractional\" NFT marketplace for Harmony users to include other very popular communities like: Ethereum, Binance Smart Chain and Polygon."
 }

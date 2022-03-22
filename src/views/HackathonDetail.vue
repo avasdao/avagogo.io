@@ -43,33 +43,29 @@
                     </span>
                 </h1>
 
-                <p class="mt-8 text-xl text-rose-500 leading-8 font-medium bg-gray-100 border-4 border-gray-300 rounded-xl p-5">
-                    {{sponsor ? sponsor.challengeDesc : ''}}
+                <p class="mt-8 text-xl text-rose-800 leading-8 font-medium bg-gray-100 border-4 border-gray-300 rounded-xl p-5">
+                    <span v-html="sponsor ? sponsor.challengeDesc : ''" />
 
-                    <a class="block mt-3 text-sm text-right text-blue-500 hover:underline" :href="sponsor ? sponsor.source : ''" target="_blank">
+                    <a class="block mt-3 text-xs sm:text-sm text-right text-blue-500 hover:underline" :href="sponsor ? sponsor.source : ''" target="_blank">
                         source: {{sponsor ? sponsor.source : ''}}
                     </a>
                 </p>
             </div>
 
             <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-                <p>
-                    {{sponsor.benefitIntro}}
-                </p>
+                <p v-html="sponsor.benefitIntro" />
 
                 <p>
                     We believe there are <strong>3 KEY BENEFITS</strong> that Ava's native integration provides for {{sponsor.name}}'s community of users:
                 </p>
 
                 <ul role="list">
-                    <li>{{sponsor ? sponsor.benefit1 : ''}}</li>
-                    <li>{{sponsor ? sponsor.benefit2 : ''}}</li>
-                    <li>{{sponsor ? sponsor.benefit3 : ''}}</li>
+                    <li v-html="sponsor ? sponsor.benefit1 : ''" />
+                    <li v-html="sponsor ? sponsor.benefit2 : ''" />
+                    <li v-html="sponsor ? sponsor.benefit3 : ''" />
                 </ul>
 
-                <p>
-                    {{sponsor.benefitClose}}
-                </p>
+                <p v-html="sponsor.benefitClose" />
 
                 <p class="text-3xl text-indigo-700 font-medium text-center">
                     Imagine What The Future Holds For
@@ -113,28 +109,29 @@
                     </span>
                 </a>
 
-                <h2>A Word From Our Sponsors</h2>
+                <h2>A Word From Our Sponsor</h2>
 
                 <p>
-                    We've been actively reaching out to our sponsors via social media (Twitter, Discord &amp; Telegram).
+                    Our team has been actively reaching out to each of our targeted sponsors via social media (Twitter, Discord &amp; Telegram).
                     This is what they've had to say..
                 </p>
 
                 <blockquote>
                     <p>
-                        Sagittis scelerisque nulla cursus in enim consectetur quam.
-                        Dictum urna sed consectetur neque tristique pellentesque.
-                        Blandit amet, sed aenean erat arcu morbi.
+                        {{sponsor.comments ? sponsor.comments : 'no comments yet..'}}
                     </p>
                 </blockquote>
 
                 <p>
-                    We have the utmost respect for the knowledge and experience of these sponsors.
-                    It's our hope that we can build strong relationships with the sponsors long after the hackathon ends.
+                    We have the highest respect for the knowledge and experience that each and every sponsor bring to this event.
+                </p>
+
+                <p>
+                    It's our hope that we can continue to build a strong and long lasting relationship with each of our targeted sponsors long after the hackathon event comes to an end.
                 </p>
 
                 <h2>
-                    Our plans for the next 6-months..
+                    Our {{sponsor ? sponsor.name : ''}} plans for the next 6-months..
                 </h2>
 
                 <p>
