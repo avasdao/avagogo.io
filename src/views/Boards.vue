@@ -40,32 +40,6 @@
                                 Do you have what it takes to BUIDL?
                                 Request an invite to our team's Slack channel.
                             </p>
-
-                            <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                                <div class="mt-3 sm:flex">
-                                    <label for="email" class="sr-only">Email</label>
-                                    <input
-                                        type="email"
-                                        v-model="email"
-                                        class="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300"
-                                        placeholder="Please enter your email here"
-                                    />
-                                    <button
-                                        @click="sendRequest"
-                                        type="submit"
-                                        class="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
-                                    >
-                                        Request invitation
-                                    </button>
-                                </div>
-
-                                <p class="mt-3 text-sm text-gray-500">
-                                    We care about the protection of your data. Read our
-                                    <router-link to="/privacy" class="font-medium text-gray-900 underline">
-                                        Privacy Policy
-                                    </router-link>.
-                                </p>
-                            </div>
                         </div>
 
                         <a href="/media/ava_gogo_dev_demo.mp4" target="_blank" class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
@@ -390,36 +364,7 @@ export default {
         }
     },
     methods: {
-        async sendRequest() {
-            if (!this.email) {
-                return alert('Please provide your email address.')
-            }
-
-            const url = 'https://api.telr.io/v1/slack/invite'
-
-            const data = {
-                action: 'Requesting invitation to #telr slack channel.',
-                fullName: 'Ava GoGo Hackathon',
-                contact: this.email,
-            }
-
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-
-            console.log('RESPONSE', response)
-            if (response) {
-                this.email = ''
-
-                alert(`Your request was sent successfully!`)
-            }
-
-        },
-
+        //
     },
     created: function () {
         this.showMobileMenu = false
