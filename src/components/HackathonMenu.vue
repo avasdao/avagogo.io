@@ -104,7 +104,7 @@
                                 </h4>
 
                                 <p class="mt-1 text-sm text-gray-500">
-                                    #MoralisAvalancheHackathon @avalancheavax @MoralisWeb3 #web3 #dapp #defi #hackathon
+                                    #MoralisAvalancheHackathon @avalancheavax @MoralisWeb3 #web3 #dapp #defi #boards
                                 </p>
                             </div>
                         </a>
@@ -152,25 +152,25 @@ export default {
         loadAlpha() {
             this.$emit('close-all')
 
-            this.$router.push('/hackathon/alpha-finance-lab')
+            this.$router.push('/boards/alpha-finance-lab')
         },
 
         loadBENQI() {
             this.$emit('close-all')
 
-            this.$router.push('/hackathon/benqi')
+            this.$router.push('/boards/benqi')
         },
 
         loadColony() {
             this.$emit('close-all')
 
-            this.$router.push('/hackathon/colony')
+            this.$router.push('/boards/colony')
         },
 
         loadYieldYak() {
             this.$emit('close-all')
 
-            this.$router.push('/hackathon/yield-yak')
+            this.$router.push('/boards/yield-yak')
         },
 
     },

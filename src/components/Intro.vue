@@ -7,12 +7,12 @@
 
             <div class="mt-3">
                 <div>
-                    <a href="https://moralis.io/avalanche-hackathon/" target="_blank" class="inline-flex space-x-4">
+                    <a href="https://hacksmart.org/" target="_blank" class="inline-flex space-x-4">
                         <span class="rounded bg-rose-50 px-2.5 py-1 text-xs font-semibold text-rose-500 tracking-wide uppercase">
                             What's new
                         </span>
                         <span class="inline-flex items-center text-sm font-medium text-rose-500 space-x-1">
-                            <span>Moralis + Avalanche Hackathon</span>
+                            <span>Hack Smart Hackathon</span>
                             <!-- Heroicon name: solid/chevron-right -->
                             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
@@ -22,8 +22,9 @@
                 </div>
                 <div class="mt-6 sm:max-w-xl">
                     <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
-                        <span class="text-blue-500 text-5xl">DeFi Is HARD!</span>
-                        <span class="block text-gray-700">Copy Winning Strategies From TOP Fund Managers</span>
+                        <span class="block text-gray-700">
+                            <span class="text-green-500">Profit</span> From The <span class="text-green-500">Winning</span> Strategies Of <span class="text-green-500">TOP</span> Fund Managers
+                        </span>
                     </h1>
 
                     <p class="mt-6 text-xl text-gray-500">
@@ -93,19 +94,6 @@
                     </div>
                 </a>
 
-                <div class="flex flex-col">
-                    <div class="mt-5 py-2 px-5 bg-indigo-300 border-2 border-indigo-500 text-xl text-white font-bold rounded-lg">
-                        Join Our Hackathon Team!
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row mt-2 items-center justify-between">
-                        <input class="w-full rounded-lg" type="email" v-model="email" placeholder="Please enter your email address here" />
-
-                        <button class="w-full sm:w-72 sm:ml-3 mt-3 sm:mt-0 py-2 px-5 bg-yellow-500 border-2 border-yellow-700 text-xl text-white font-bold rounded-lg" @click="sendRequest">
-                            Send Request
-                        </button>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -122,36 +110,7 @@ export default {
         }
     },
     methods: {
-        async sendRequest() {
-            if (!this.email) {
-                return alert('Please provide your email address.')
-            }
-
-            const url = 'https://api.telr.io/v1/slack/invite'
-
-            const data = {
-                action: 'Requesting invitation to #telr slack channel.',
-                fullName: 'Ava GoGo Hackathon',
-                contact: this.email,
-            }
-
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-
-            console.log('RESPONSE', response)
-            if (response) {
-                this.email = ''
-
-                alert(`Your request was sent successfully!`)
-            }
-
-        },
-
+        //
     },
     created: function () {
         //

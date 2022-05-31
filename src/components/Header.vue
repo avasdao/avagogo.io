@@ -107,7 +107,7 @@
 
                     <div class="flex items-center md:ml-12">
                         <span class="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-                            <router-link to="/hackathon" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
+                            <router-link to="/boards" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
                                 #ETHDenver2022
                             </router-link>
                             <!-- <router-link to="/dashboard" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
@@ -256,7 +256,7 @@
                     </div>
 
                     <div class="mt-6">
-                        <span @click="hackathon" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                        <span @click="boards" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
                             #ETHDenver2022
                             <!-- Open Dashboard -->
                         </span>
@@ -316,9 +316,9 @@ export default {
             this.$router.push('/gogo')
         },
 
-        hackathon() {
+        boards() {
             this.showMobileMenu = false
-            this.$router.push('/hackathon')
+            this.$router.push('/boards')
         },
 
         toggleExtras() {

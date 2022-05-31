@@ -83,7 +83,7 @@
 
                             <ul role="list" class="mt-4 space-y-4">
                                 <li>
-                                    <router-link to="/hackathon" class="text-base text-gray-400 hover:text-gray-300">
+                                    <router-link to="/boards" class="text-base text-gray-400 hover:text-gray-300">
                                         Hackathon
                                     </router-link>
                                 </li>

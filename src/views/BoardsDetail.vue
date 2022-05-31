@@ -127,7 +127,7 @@
                 </p>
 
                 <p>
-                    It's our hope that we can continue to build a strong and long lasting relationship with each of our targeted sponsors long after the hackathon event comes to an end.
+                    It's our hope that we can continue to build a strong and long lasting relationship with each of our targeted sponsors long after the boards event comes to an end.
                 </p>
 
                 <h2>
@@ -159,44 +159,44 @@ export default {
             console.log('ROUTE CHANGE (watch):', to, from)
 
             switch(to.path) {
-            case '/hackathon/1inch':
-                this.sponsor = require('./hackathon/1inch.json')
+            case '/boards/1inch':
+                this.sponsor = require('./boards/1inch.json')
                 this.featured = '1inch'
                 break
-            case '/hackathon/aave':
-                this.sponsor = require('./hackathon/Aave.json')
+            case '/boards/aave':
+                this.sponsor = require('./boards/Aave.json')
                 this.featured = 'aave'
                 break
-            case '/hackathon/api3':
-                this.sponsor = require('./hackathon/API3.json')
+            case '/boards/api3':
+                this.sponsor = require('./boards/API3.json')
                 this.featured = 'api3'
                 break
-            case '/hackathon/ceramic':
-                this.sponsor = require('./hackathon/Ceramic.json')
+            case '/boards/ceramic':
+                this.sponsor = require('./boards/Ceramic.json')
                 this.featured = 'ceramic'
                 break
-            case '/hackathon/harmony':
-                this.sponsor = require('./hackathon/Harmony.json')
+            case '/boards/harmony':
+                this.sponsor = require('./boards/Harmony.json')
                 this.featured = 'harmony'
                 break
-            case '/hackathon/lit':
-                this.sponsor = require('./hackathon/Lit.json')
+            case '/boards/lit':
+                this.sponsor = require('./boards/Lit.json')
                 this.featured = 'lit'
                 break
-            case '/hackathon/livepeer':
-                this.sponsor = require('./hackathon/Livepeer.json')
+            case '/boards/livepeer':
+                this.sponsor = require('./boards/Livepeer.json')
                 this.featured = 'livepeer'
                 break
-            case '/hackathon/rarible':
-                this.sponsor = require('./hackathon/Rarible.json')
+            case '/boards/rarible':
+                this.sponsor = require('./boards/Rarible.json')
                 this.featured = 'rarible'
                 break
-            case '/hackathon/tableland':
-                this.sponsor = require('./hackathon/Tableland.json')
+            case '/boards/tableland':
+                this.sponsor = require('./boards/Tableland.json')
                 this.featured = 'tableland'
                 break
-            case '/hackathon/yearn':
-                this.sponsor = require('./hackathon/Yearn.json')
+            case '/boards/yearn':
+                this.sponsor = require('./boards/Yearn.json')
                 this.featured = 'yearn'
                 break
             }
@@ -223,44 +223,44 @@ export default {
         // console.log('PATH', path)
 
         switch(path) {
-        case '/hackathon/1inch':
-            this.sponsor = require('./hackathon/1inch.json')
+        case '/boards/1inch':
+            this.sponsor = require('./boards/1inch.json')
             this.featured = '1inch'
             break
-        case '/hackathon/aave':
-            this.sponsor = require('./hackathon/Aave.json')
+        case '/boards/aave':
+            this.sponsor = require('./boards/Aave.json')
             this.featured = 'aave'
             break
-        case '/hackathon/api3':
-            this.sponsor = require('./hackathon/API3.json')
+        case '/boards/api3':
+            this.sponsor = require('./boards/API3.json')
             this.featured = 'api3'
             break
-        case '/hackathon/ceramic':
-            this.sponsor = require('./hackathon/Ceramic.json')
+        case '/boards/ceramic':
+            this.sponsor = require('./boards/Ceramic.json')
             this.featured = 'ceramic'
             break
-        case '/hackathon/harmony':
-            this.sponsor = require('./hackathon/Harmony.json')
+        case '/boards/harmony':
+            this.sponsor = require('./boards/Harmony.json')
             this.featured = 'harmony'
             break
-        case '/hackathon/lit':
-            this.sponsor = require('./hackathon/Lit.json')
+        case '/boards/lit':
+            this.sponsor = require('./boards/Lit.json')
             this.featured = 'lit'
             break
-        case '/hackathon/livepeer':
-            this.sponsor = require('./hackathon/Livepeer.json')
+        case '/boards/livepeer':
+            this.sponsor = require('./boards/Livepeer.json')
             this.featured = 'livepeer'
             break
-        case '/hackathon/rarible':
-            this.sponsor = require('./hackathon/Rarible.json')
+        case '/boards/rarible':
+            this.sponsor = require('./boards/Rarible.json')
             this.featured = 'rarible'
             break
-        case '/hackathon/tableland':
-            this.sponsor = require('./hackathon/Tableland.json')
+        case '/boards/tableland':
+            this.sponsor = require('./boards/Tableland.json')
             this.featured = 'tableland'
             break
-        case '/hackathon/yearn':
-            this.sponsor = require('./hackathon/Yearn.json')
+        case '/boards/yearn':
+            this.sponsor = require('./boards/Yearn.json')
             this.featured = 'yearn'
             break
         }

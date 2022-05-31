@@ -42,50 +42,50 @@ const routes = [
         component: () => import(/* webpackChunkName: "core" */ '../views/Team.vue')
     },
 
-    // HACKATHON SCREENS
+    // BOARDS SCREENS
     {
-        path: '/hackathon',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/Hackathon.vue')
+        path: '/boards',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/Boards.vue')
     },
     {
-        path: '/hackathon/1inch',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+        path: '/boards/1inch',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
     },
     {
-        path: '/hackathon/aave',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+        path: '/boards/aave',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
     },
     {
-        path: '/hackathon/api3',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+        path: '/boards/api3',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
     },
     {
-        path: '/hackathon/ceramic',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+        path: '/boards/ceramic',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
     },
     {
-        path: '/hackathon/harmony',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+        path: '/boards/harmony',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
     },
     {
-        path: '/hackathon/lit',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+        path: '/boards/lit',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
     },
     {
-        path: '/hackathon/livepeer',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+        path: '/boards/livepeer',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
     },
     {
-        path: '/hackathon/rarible',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+        path: '/boards/rarible',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
     },
     {
-        path: '/hackathon/tableland',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+        path: '/boards/tableland',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
     },
     {
-        path: '/hackathon/yearn',
-        component: () => import(/* webpackChunkName: "hackathon" */ '../views/HackathonDetail.vue')
+        path: '/boards/yearn',
+        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
     },
 
     // DEFI SCREENS
