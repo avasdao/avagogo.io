@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Ava GoGo Docs',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -34,26 +34,36 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'For Users',
+        link: '/users/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'For Pros',
+        link: '/pros/'
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Download App',
+        link: 'https://avagogo.io/download'
       }
     ],
     sidebar: {
-      '/guide/': [
+      '/users/': [
         {
-          title: 'Guide',
+          title: 'User Guide',
           collapsable: false,
           children: [
             '',
             'using-vue',
+          ]
+        }
+      ],
+      '/pros/': [
+        {
+          title: 'Pro Guide',
+          collapsable: false,
+          children: [
+            '',
+            // 'using-vue',
           ]
         }
       ],

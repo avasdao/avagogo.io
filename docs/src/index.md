@@ -1,15 +1,15 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: DeFi made easy!
-actionText: Quick Start →
-actionLink: /guide/
+heroImage: https://avagogo.io/logo.png
+tagline: Knowledge Center for the MOST Popular DeFi Community in Crypto
+actionText: Let's Get Started →
+actionLink: /users/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
+- title: Trade Anywhere.
+  details: Ava delivers an award-winning experience for both Android and iOS users to trade while on-the-go.
+- title: Trade Confidently.
   details: Feature 2 Description
-- title: Feature 3 Title
+- title: Trade Socially.
   details: Feature 3 Description
 footer: Made by Ava Nakamoto with ❤️
 ---
