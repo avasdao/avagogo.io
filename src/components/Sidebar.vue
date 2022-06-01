@@ -71,7 +71,7 @@
 
 <script>
 /* Import modules. */
-import { inject } from 'vue'
+// import { inject } from 'vue'
 
 export default {
     props: {
@@ -82,38 +82,38 @@ export default {
          * Login
          */
         async login () {
-            // const user = await this.$moralis.Web3.authenticate()
-            const user = await this.$moralis.Web3
-                .authenticate({ signingMessage: 'Welcome to Ava GoGo. Please authenticate your account -- ' })
-                .catch(err => {
-                    console.error(err)
-
-                    if (err && err.code && err.code === 4100) {
-                        alert('Please sign-in to your Web3 wallet to continue.')
-                    } else if (err && err.message) {
-                        alert(err.message)
-                    }
-                })
+            // // const user = await this.$moralis.Web3.authenticate()
+            // const user = await this.$moralis.Web3
+            //     .authenticate({ signingMessage: 'Welcome to Ava GoGo. Please authenticate your account -- ' })
+            //     .catch(err => {
+            //         console.error(err)
+            //
+            //         if (err && err.code && err.code === 4100) {
+            //             alert('Please sign-in to your Web3 wallet to continue.')
+            //         } else if (err && err.message) {
+            //             alert(err.message)
+            //         }
+            //     })
 
             /* Save user. */
-            this.setUser(user)
+            // this.setUser(user)
         },
 
         /**
          * Logout
          */
         async logout() {
-            await this.$moralis.User.logOut()
-                .catch(err => {
-                    console.error(err)
-                })
-            this.setUser({})
+            // await this.$moralis.User.logOut()
+            //     .catch(err => {
+            //         console.error(err)
+            //     })
+            // this.setUser({})
         },
 
     },
     created: function () {
         // const store = useStore()
-        this.$moralis = inject('$moralis')
+        // this.$moralis = inject('$moralis')
 
     },
     mounted: function () {

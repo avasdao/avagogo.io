@@ -1,6 +1,6 @@
 {
   "name": "avagogo.io",
-  "version": "12.1.29",
+  "version": "22.6.1",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,10 +10,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@walletconnect/web3-provider": "1.7.1",
     "core-js": "3.20.3",
+    "ethers": "5.6.8",
     "moment": "2.29.1",
-    "moralis": "1.2.3",
     "numeral": "2.0.6",
     "uuid": "8.3.2",
     "vue": "3.0.0",
