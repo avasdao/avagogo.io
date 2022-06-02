@@ -10,12 +10,15 @@
                     </h1>
 
                     <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-                        Stake. Vote. Spend Your $GOGO
+                        Stake It. Stream It.
+                    </p>
+
+                    <p class="mt-1 text-3xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-5xl">
+                        It's Your $GOGO
                     </p>
 
                     <p class="max-w-xl mx-auto mt-5 text-xl text-gray-500">
-                        Start earning $GOGO today!
-                        We're looking for team members to join the <strong>FASTEST</strong> growing community in DeFi.
+                        Join the <strong>FASTEST</strong> growing community in DeFi.
                     </p>
                 </div>
             </div>
@@ -30,9 +33,15 @@
                 <div class="bg-white py-16 px-4 sm:py-24 sm:px-6 lg:px-0 lg:pr-8">
                     <div class="max-w-lg mx-auto lg:mx-0">
                         <h2 class="text-base font-semibold tracking-wide text-cyan-600 uppercase">
-                            Full-featured
+                            Getting Started
                         </h2>
-                        <p class="mt-2 text-2xl font-extrabold text-gray-900 sm:text-3xl">Everything you need to talk with your customers</p>
+
+                        <p class="mt-2 text-2xl font-extrabold text-gray-900 sm:text-3xl">
+                            Stake it. Stream it.
+                            <br />It's your $GOGO.
+                            <br />Do what you want.
+                        </p>
+
                         <dl class="mt-12 space-y-10">
                             <div class="relative">
                                 <dt>
@@ -42,8 +51,12 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
                                         </svg>
                                     </div>
-                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">List view</p>
+
+                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
+                                        Maximum Supply is ONE BILLION $GOGO
+                                    </p>
                                 </dt>
+
                                 <dd class="mt-2 ml-16 text-base text-gray-500">
                                     Nunc a, lacinia sed risus neque, arcu, rhoncus. Id mauris justo facilisis aliquam platea vestibulum condimentum morbi.
                                 </dd>
@@ -62,11 +75,19 @@
                                             />
                                         </svg>
                                     </div>
-                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Boards</p>
+
+                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
+                                        Native Bridge / Minting on FIVE Blockchains
+                                    </p>
                                 </dt>
-                                <dd class="mt-2 ml-16 text-base text-gray-500">
-                                    Purus lobortis volutpat posuere id integer nunc tellus. Non mauris malesuada feugiat massa mi pellentesque cum est. Pharetra a varius urna rhoncus, tempor rutrum.
-                                </dd>
+
+                                <ol class="mt-2 ml-16 text-base text-gray-500 list-decimal list-inside pl-5">
+                                    <li>Avalanche (AVAX)</li>
+                                    <li>Binance (BSC)</li>
+                                    <li>Bitcoin (SBCH)</li>
+                                    <li>Ethereum (ETH)</li>
+                                    <li>Polygon (MATIC)</li>
+                                </ol>
                             </div>
 
                             <div class="relative">
@@ -77,8 +98,12 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                         </svg>
                                     </div>
-                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Calendar</p>
+
+                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
+                                        Token Mining
+                                    </p>
                                 </dt>
+
                                 <dd class="mt-2 ml-16 text-base text-gray-500">
                                     Purus lobortis volutpat posuere id integer nunc tellus. Non mauris malesuada feugiat massa mi pellentesque cum est. Pharetra a varius urna rhoncus, tempor rutrum.
                                 </dd>
@@ -92,8 +117,12 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                         </svg>
                                     </div>
-                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Teams</p>
+
+                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
+                                        DAO Governance
+                                    </p>
                                 </dt>
+
                                 <dd class="mt-2 ml-16 text-base text-gray-500">
                                     Tincidunt sollicitudin interdum nunc sit risus at bibendum vitae. Urna, quam ut sit justo non, consectetur et varius.
                                 </dd>
@@ -107,20 +136,33 @@
                             <h2 class="sr-only">Price</h2>
                             <p class="relative grid grid-cols-2">
                                 <span class="flex flex-col text-center">
-                                    <span class="text-5xl font-extrabold text-white tracking-tight">$99</span>
-                                    <span class="mt-2 text-base font-medium text-cyan-100">Setup fee</span>
+                                    <span class="text-5xl font-extrabold text-white tracking-tight">
+                                        $0.01
+                                    </span>
+
+                                    <span class="mt-2 text-base font-medium text-cyan-100">
+                                        Last Trade Price
+                                    </span>
+
                                     <span class="sr-only">plus</span>
                                 </span>
+
                                 <span class="pointer-events-none absolute h-12 w-full flex items-center justify-center" aria-hidden="true">
                                     <!-- Heroicon name: outline/plus -->
                                     <svg class="h-6 w-6 text-cyan-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                                     </svg>
                                 </span>
+
                                 <span>
                                     <span class="flex flex-col text-center">
-                                        <span class="text-5xl font-extrabold text-white tracking-tight">$4</span>
-                                        <span class="mt-2 text-base font-medium text-cyan-100">Per month</span>
+                                        <span class="text-5xl font-extrabold text-white tracking-tight">
+                                            20.0%
+                                        </span>
+
+                                        <span class="mt-2 text-base font-medium text-cyan-100">
+                                            Staking APY
+                                        </span>
                                     </span>
                                 </span>
                             </p>
@@ -139,7 +181,9 @@
                                 <svg class="h-6 w-6 text-cyan-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span class="ml-3">No per user fees</span>
+                                <span class="ml-3">
+                                    Uniswap &amp; SushiSwap
+                                </span>
                             </li>
 
                             <li class="bg-cyan-700 bg-opacity-50 py-4 px-4 flex items-center text-base text-white">
@@ -279,10 +323,20 @@
         <div class="bg-gradient-to-r from-cyan-600 to-green-400">
             <div class="max-w-2xl mx-auto py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                    <span class="block">Boost your productivity.</span>
-                    <span class="block text-cyan-900">Start using Workflow today.</span>
+                    <span class="block">
+                        Ready to get engaged?
+                    </span>
+
+                    <span class="block text-cyan-900">
+                        Start staking $GOGO today!
+                    </span>
                 </h2>
-                <p class="mt-4 text-lg leading-6 text-cyan-100">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+
+                <p class="mt-4 text-lg leading-6 text-cyan-100">
+                    This is NOT an investment.
+                    This is NOT financial advice.
+                </p>
+
                 <a href="javascript://" class="mt-8 w-full bg-cyan-50 border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-cyan-700 hover:bg-cyan-100 sm:w-auto">
                     Sign up for free
                 </a>

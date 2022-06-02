@@ -10,7 +10,7 @@
                     </router-link>
 
                     <p class="text-gray-400 text-base">
-                        Ava Gogo makes DeFi easy enough for <strong>ANYONE</strong> to earn the highest yields of crypto's <strong>TOP</strong> traders.
+                        Ava GoGo makes DeFi easy enough for <strong>ANYONE</strong> to earn the highest yields of crypto's <strong>TOP</strong> traders.
                     </p>
 
                     <div class="flex space-x-6">
@@ -182,11 +182,11 @@
 
             <div class="mt-12 border-t border-gray-700 pt-8">
                 <p class="hidden sm:block text-base text-gray-400 text-center">
-                    &copy; {{curYear}} Ava GoGo DAO. All rights reserved.
+                    &copy; {{curYear}} <a class="text-blue-400 text-medium hover:underline" href="https://avasdao.org" target="_blank">Ava GoGo DAO</a>. All rights reserved.
                 </p>
 
                 <p class="sm:hidden text-base text-gray-400 text-center">
-                    &copy; {{curYear}} Ava GoGo DAO.<br />All rights reserved.
+                    &copy; {{curYear}} <a class="text-blue-400 text-medium hover:underline" href="https://avasdao.org" target="_blank">Ava GoGo DAO</a>.<br />All rights reserved.
                 </p>
             </div>
         </div>

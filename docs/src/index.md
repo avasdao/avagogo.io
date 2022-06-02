@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: https://avagogo.io/logo.png
-tagline: Knowledge Center for the MOST Popular DeFi Community in Crypto
+tagline: Ready to take a deep dive into the MOST Popular DeFi Community in Crypto?
 actionText: Let's Get Started →
 actionLink: /users/
 features:

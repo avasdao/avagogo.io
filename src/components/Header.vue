@@ -15,7 +15,7 @@
                     <button
                         @click="showMobileMenu = !showMobileMenu"
                         type="button"
-                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-yellow-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                         aria-expanded="false"
                     >
                         <span class="sr-only">Open menu</span>
@@ -28,45 +28,11 @@
 
                 <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
                     <nav class="flex space-x-10">
-                        <a @click="download" href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Download
+                        <a href="https://docs.avagogo.io" target="_blank" class="text-base font-medium text-gray-500 hover:text-yellow-500 uppercase">
+                            Docs
                         </a>
 
-                        <div class="hidden">
-                            <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-                            <button
-                                @click="toggleHackathon"
-                                type="button"
-                                class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                                aria-expanded="false"
-                            >
-                                <span class="text-red-500">Hackathon</span>
-                                <!--
-                    Heroicon name: solid/chevron-down
-
-                    Item active: "text-gray-600", Item inactive: "text-gray-400"
-                  -->
-                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-
-                            <!--
-                  'Solutions' flyout menu, show/hide based on flyout menu state.
-
-                  Entering: "transition ease-out duration-200"
-                    From: "opacity-0 -translate-y-1"
-                    To: "opacity-100 translate-y-0"
-                  Leaving: "transition ease-in duration-150"
-                    From: "opacity-100 translate-y-0"
-                    To: "opacity-0 -translate-y-1"
-                -->
-                            <div v-if="showHackathon" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg">
-                                <HackathonMenu @close-all="closeAll" />
-                            </div>
-                        </div>
-
-                        <a @click="gogo" href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a @click="gogo" href="javascript://" class="text-base font-medium text-gray-500 hover:text-yellow-500">
                             $GOGO
                         </a>
 
@@ -75,10 +41,10 @@
                             <button
                                 @click="toggleExtras"
                                 type="button"
-                                class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-indigo-500"
                                 aria-expanded="false"
                             >
-                                <span>Extras</span>
+                                <span class="uppercase">Investors</span>
                                 <!--
                     Heroicon name: solid/chevron-down
 
@@ -273,12 +239,10 @@
 
 /* Import components. */
 import ExtrasMenu from '@/components/ExtrasMenu'
-import HackathonMenu from '@/components/HackathonMenu'
 
 export default {
     components: {
         ExtrasMenu,
-        HackathonMenu,
     },
     data: () => {
         return {
