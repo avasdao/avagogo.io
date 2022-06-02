@@ -53,7 +53,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'using-vue',
+            'tokenomics',
           ]
         }
       ],
@@ -63,7 +63,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            // 'using-vue',
+            'tokenomics',
           ]
         }
       ],
