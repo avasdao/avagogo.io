@@ -57,7 +57,7 @@
                                 <button type="button" class="flex flex-col items-center relative w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                     <span class="sr-only">Watch our video to learn more</span>
 
-                                    <img class="w-full" src="/media/boards-demo.png" alt="" />
+                                    <img class="w-full" src="/media/portals-demo.png" alt="" />
 
                                     <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
                                         <svg class="h-20 w-20 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
@@ -85,7 +85,7 @@
                         <img class="h-24" src="https://i.imgur.com/D0OMVvd.png" />
                         <div class="mt-5">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/boards/1inch" class="focus:outline-none">
+                                <router-link to="/portals/1inch" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
@@ -111,7 +111,7 @@
                         <img class="h-24" src="https://i.imgur.com/lpeNThH.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/boards/aave" class="focus:outline-none">
+                                <router-link to="/portals/aave" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
@@ -137,7 +137,7 @@
                         <img class="h-24" src="https://i.imgur.com/EeqYXlJ.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/boards/api3" class="focus:outline-none">
+                                <router-link to="/portals/api3" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
@@ -163,7 +163,7 @@
                         <img class="h-24" src="https://i.imgur.com/SUFpqfa.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/boards/ceramic" class="focus:outline-none">
+                                <router-link to="/portals/ceramic" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
@@ -189,7 +189,7 @@
                         <img class="h-24" src="https://i.imgur.com/vk8gv7Q.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/boards/harmony" class="focus:outline-none">
+                                <router-link to="/portals/harmony" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
@@ -219,7 +219,7 @@
                         <img class="h-24" src="https://i.imgur.com/nuaKghb.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/boards/lit" class="focus:outline-none">
+                                <router-link to="/portals/lit" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
@@ -245,7 +245,7 @@
                         <img class="h-24" src="https://i.imgur.com/FidAkQp.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/boards/livepeer" class="focus:outline-none">
+                                <router-link to="/portals/livepeer" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
@@ -271,7 +271,7 @@
                         <img class="h-24" src="https://i.imgur.com/ZysMiEx.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/boards/rarible" class="focus:outline-none">
+                                <router-link to="/portals/rarible" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
@@ -297,7 +297,7 @@
                         <img class="h-24" src="https://i.imgur.com/7dHkZrm.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/boards/tableland" class="focus:outline-none">
+                                <router-link to="/portals/tableland" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">
@@ -323,7 +323,7 @@
                         <img class="h-24" src="https://i.imgur.com/ILF49In.png" />
                         <div class="mt-8">
                             <h3 class="text-lg font-medium">
-                                <router-link to="/boards/yearn" class="focus:outline-none">
+                                <router-link to="/portals/yearn" class="focus:outline-none">
                                     <!-- Extend touch target to entire panel -->
                                     <span class="absolute inset-0" aria-hidden="true"></span>
                                     <h1 class="text-2xl text-indigo-500 font-light">

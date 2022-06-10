@@ -1,11 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Home from '../views/Home.vue'
+import Admin from '../views/Admin'
+import Home from '../views/Home'
 
 const routes = [
     {
         path: '/',
-        component: Home
+        component: Home,
+    },
+
+    // ADMIN SCREENS
+    {
+        path: '/admin',
+        component: Admin,
     },
 
     // CORE SCREENS
@@ -42,50 +49,50 @@ const routes = [
         component: () => import(/* webpackChunkName: "core" */ '../views/Team.vue')
     },
 
-    // BOARDS SCREENS
+    // PORTALS SCREENS
     {
-        path: '/boards',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/Boards.vue')
+        path: '/portals',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/Portals.vue')
     },
     {
-        path: '/boards/1inch',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
+        path: '/portals/1inch',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/PortalsDetail.vue')
     },
     {
-        path: '/boards/aave',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
+        path: '/portals/aave',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/PortalsDetail.vue')
     },
     {
-        path: '/boards/api3',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
+        path: '/portals/api3',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/PortalsDetail.vue')
     },
     {
-        path: '/boards/ceramic',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
+        path: '/portals/ceramic',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/PortalsDetail.vue')
     },
     {
-        path: '/boards/harmony',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
+        path: '/portals/harmony',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/PortalsDetail.vue')
     },
     {
-        path: '/boards/lit',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
+        path: '/portals/lit',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/PortalsDetail.vue')
     },
     {
-        path: '/boards/livepeer',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
+        path: '/portals/livepeer',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/PortalsDetail.vue')
     },
     {
-        path: '/boards/rarible',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
+        path: '/portals/rarible',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/PortalsDetail.vue')
     },
     {
-        path: '/boards/tableland',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
+        path: '/portals/tableland',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/PortalsDetail.vue')
     },
     {
-        path: '/boards/yearn',
-        component: () => import(/* webpackChunkName: "boards" */ '../views/BoardsDetail.vue')
+        path: '/portals/yearn',
+        component: () => import(/* webpackChunkName: "portals" */ '../views/PortalsDetail.vue')
     },
 
     // DEFI SCREENS

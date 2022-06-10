@@ -74,7 +74,7 @@
 
                 <div class="mx-auto space-y-2 lg:space-y-0 lg:gap-4 lg:grid lg:grid-cols-3">
                     <a href="javascript://" class="w-full hover:opacity-60">
-                        <img :src="require('../assets/screenshots/boards-list.png')" class="rounded-xl border-4 border-gray-300 hover:border-yellow-500" />
+                        <img :src="require('../assets/screenshots/portals-list.png')" class="rounded-xl border-4 border-gray-300 hover:border-yellow-500" />
                     </a>
 
                     <a href="javascript://" class="w-full hover:opacity-60">
@@ -127,7 +127,7 @@
                 </p>
 
                 <p>
-                    It's our hope that we can continue to build a strong and long lasting relationship with each of our targeted sponsors long after the boards event comes to an end.
+                    It's our hope that we can continue to build a strong and long lasting relationship with each of our targeted sponsors long after the portals event comes to an end.
                 </p>
 
                 <h2>
@@ -159,44 +159,44 @@ export default {
             console.log('ROUTE CHANGE (watch):', to, from)
 
             switch(to.path) {
-            case '/boards/1inch':
-                this.sponsor = require('./boards/1inch.json')
+            case '/portals/1inch':
+                this.sponsor = require('./portals/1inch.json')
                 this.featured = '1inch'
                 break
-            case '/boards/aave':
-                this.sponsor = require('./boards/Aave.json')
+            case '/portals/aave':
+                this.sponsor = require('./portals/Aave.json')
                 this.featured = 'aave'
                 break
-            case '/boards/api3':
-                this.sponsor = require('./boards/API3.json')
+            case '/portals/api3':
+                this.sponsor = require('./portals/API3.json')
                 this.featured = 'api3'
                 break
-            case '/boards/ceramic':
-                this.sponsor = require('./boards/Ceramic.json')
+            case '/portals/ceramic':
+                this.sponsor = require('./portals/Ceramic.json')
                 this.featured = 'ceramic'
                 break
-            case '/boards/harmony':
-                this.sponsor = require('./boards/Harmony.json')
+            case '/portals/harmony':
+                this.sponsor = require('./portals/Harmony.json')
                 this.featured = 'harmony'
                 break
-            case '/boards/lit':
-                this.sponsor = require('./boards/Lit.json')
+            case '/portals/lit':
+                this.sponsor = require('./portals/Lit.json')
                 this.featured = 'lit'
                 break
-            case '/boards/livepeer':
-                this.sponsor = require('./boards/Livepeer.json')
+            case '/portals/livepeer':
+                this.sponsor = require('./portals/Livepeer.json')
                 this.featured = 'livepeer'
                 break
-            case '/boards/rarible':
-                this.sponsor = require('./boards/Rarible.json')
+            case '/portals/rarible':
+                this.sponsor = require('./portals/Rarible.json')
                 this.featured = 'rarible'
                 break
-            case '/boards/tableland':
-                this.sponsor = require('./boards/Tableland.json')
+            case '/portals/tableland':
+                this.sponsor = require('./portals/Tableland.json')
                 this.featured = 'tableland'
                 break
-            case '/boards/yearn':
-                this.sponsor = require('./boards/Yearn.json')
+            case '/portals/yearn':
+                this.sponsor = require('./portals/Yearn.json')
                 this.featured = 'yearn'
                 break
             }
@@ -223,44 +223,44 @@ export default {
         // console.log('PATH', path)
 
         switch(path) {
-        case '/boards/1inch':
-            this.sponsor = require('./boards/1inch.json')
+        case '/portals/1inch':
+            this.sponsor = require('./portals/1inch.json')
             this.featured = '1inch'
             break
-        case '/boards/aave':
-            this.sponsor = require('./boards/Aave.json')
+        case '/portals/aave':
+            this.sponsor = require('./portals/Aave.json')
             this.featured = 'aave'
             break
-        case '/boards/api3':
-            this.sponsor = require('./boards/API3.json')
+        case '/portals/api3':
+            this.sponsor = require('./portals/API3.json')
             this.featured = 'api3'
             break
-        case '/boards/ceramic':
-            this.sponsor = require('./boards/Ceramic.json')
+        case '/portals/ceramic':
+            this.sponsor = require('./portals/Ceramic.json')
             this.featured = 'ceramic'
             break
-        case '/boards/harmony':
-            this.sponsor = require('./boards/Harmony.json')
+        case '/portals/harmony':
+            this.sponsor = require('./portals/Harmony.json')
             this.featured = 'harmony'
             break
-        case '/boards/lit':
-            this.sponsor = require('./boards/Lit.json')
+        case '/portals/lit':
+            this.sponsor = require('./portals/Lit.json')
             this.featured = 'lit'
             break
-        case '/boards/livepeer':
-            this.sponsor = require('./boards/Livepeer.json')
+        case '/portals/livepeer':
+            this.sponsor = require('./portals/Livepeer.json')
             this.featured = 'livepeer'
             break
-        case '/boards/rarible':
-            this.sponsor = require('./boards/Rarible.json')
+        case '/portals/rarible':
+            this.sponsor = require('./portals/Rarible.json')
             this.featured = 'rarible'
             break
-        case '/boards/tableland':
-            this.sponsor = require('./boards/Tableland.json')
+        case '/portals/tableland':
+            this.sponsor = require('./portals/Tableland.json')
             this.featured = 'tableland'
             break
-        case '/boards/yearn':
-            this.sponsor = require('./boards/Yearn.json')
+        case '/portals/yearn':
+            this.sponsor = require('./portals/Yearn.json')
             this.featured = 'yearn'
             break
         }

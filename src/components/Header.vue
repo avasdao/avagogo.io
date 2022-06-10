@@ -72,13 +72,10 @@
                     </nav>
 
                     <div class="flex items-center md:ml-12">
-                        <span class="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-                            <router-link to="/download" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
+                        <span class="inline-flex border-4 border-yellow-400 bg-yellow-100 hover:bg-yellow-600 rounded-xl shadow-md ring-1 ring-black ring-opacity-5">
+                            <router-link to="/download" class="inline-flex items-center px-4 py-2 border border-transparent text-xl font-medium text-yellow-800 hover:text-yellow-100">
                                 Download App
                             </router-link>
-                            <!-- <router-link to="/dashboard" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
-                                Open Dashboard
-                            </router-link> -->
                         </span>
                     </div>
                 </div>
