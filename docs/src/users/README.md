@@ -1,6 +1,6 @@
 # Introduction
 
-Ava GoGo is introducing the ULTIMATE crypto experience on ANY iOS / Android phone or tablet; and is designed to onboard newcomers and seasoned investors alike to the world of GameFi, DeFi and SocialFi by offering exclusive content and features found no where else.
+Ava GoGo introduced the ULTIMATE crypto experience for iOS and Android devices. The app is designed to navigate both newcomers and seasoned investors alike across the worlds of DeFi, GameFi and SocialFi; while offering exclusive community, content and services found nowhere else.
 
 Our mobile-first strategy that puts us in the unique position of being the FIRST native mobile dApp to integrate with leading platforms like: Aave, OpenSea, UniSwap and Yearn Finance.
 
